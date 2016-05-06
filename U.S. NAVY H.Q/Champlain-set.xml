@@ -349,7 +349,7 @@ lights.open();
          	<ai>
 			<enabled type="bool">true</enabled>
 			<scenarios-enabled type="bool" userarchive="y">true</scenarios-enabled>
-			<scenario>../Aircraft/U.S. NAVY H.Q/Dialogs/CG57_AI_Part</scenario>
+			<scenario>CG57_AI_Part</scenario>
 			</ai>
 			
  <weight n="0">
@@ -368,7 +368,7 @@ lights.open();
 			
    <systems>
 	<autopilot>
-			<path>Aircraft/pt-boat/Systems/pt-boat-filters.xml</path>
+			<path>Aircraft/U.S. NAVY H.Q/Systems/pt-boat-filters.xml</path>
 	</autopilot>	
    </systems>			
  </sim>
