@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <filter>
+    <name>Rudder Filter</name>
+    <debug>false</debug>
+    <type>noise-spike</type>
+    <input>controls/flight/aileron</input>
+    <output>controls/flight/aileron-filtered</output>
+    <max-rate-of-change>
+				<prop>sim/SDM/rudder-damp</prop>
+		</max-rate-of-change>
+  </filter>
+
+  <filter>
+    <name>Throttle Filter</name>
+    <debug>false</debug>
+    <type>noise-spike</type>
+    <input>controls/engines/engine[0]/throttle</input>
+    <output>controls/flight/throttle-filtered</output>
+    <max-rate-of-change>
+								<prop>sim/SDM/throttle-damp</prop>
+		</max-rate-of-change>
+  </filter>
+
+</PropertyList>

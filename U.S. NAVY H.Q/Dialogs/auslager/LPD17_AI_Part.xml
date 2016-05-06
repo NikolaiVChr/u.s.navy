@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <scenario>
+
+  <name>USS SanAntonio</name>
+  <description>
+
+  </description>
+
+  <entry>
+   <callsign>USNRC-OP LPD-17</callsign>  
+   <pennant-number>LPD-17</pennant-number>
+   <TACAN-channel-ID>028Y</TACAN-channel-ID>   
+   <type>Carrier</type>
+   <class>Amphibious Transport Dock</class>
+   <model>Models/Geometry/null.ac</model>
+
+  </entry> 
+  
+<entry>
+<type>escort</type><model>Models/Aircraft/H-60.xml</model>
+   <condition>
+  <property>controls/Mary-X</property>
+   </condition>
+  <name>Mary-X</name>
+  <callsign>Mary</callsign>
+  <turn-radius-ft>200</turn-radius-ft>
+  <fixed-turn-radius-ft>200</fixed-turn-radius-ft>
+  <rudder-constant>30</rudder-constant>
+  <speed-constant>5</speed-constant>
+  <max-speed-kts>120</max-speed-kts>
+  <station>
+  <range-nm>0.1</range-nm>
+  <brg-deg>-70</brg-deg>
+  <range-limit-nm>0.02</range-limit-nm>
+  <height-ft>120</height-ft>
+  <parent>USS SanAntonio</parent></station>
+</entry>   <!--  -->
+
+ 
+</scenario>
+
+</PropertyList>

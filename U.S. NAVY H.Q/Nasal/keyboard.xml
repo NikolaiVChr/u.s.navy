@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+ 
+ 
+
+ 
+ 
+  <key n="76">
+    <name>L</name>
+    <binding>
+	<command>property-toggle</command>
+	<property>controls/lighting/landzone</property>
+	</binding>
+	<binding><command>property-toggle</command>
+	<property>controls/lighting/coord-light</property>
+	</binding></key>
+
+	
+	<key n="115">
+        <name>s</name>
+        <desc>slow </desc> 
+	  <binding>
+          <command>property-assign</command>
+             <property>/controls/engines/engine[0]/throttle</property>
+	         <value>0.26</value>
+      <condition><greater-than>
+<property>/controls/engines/engine[0]/throttle</property>
+	  <value>0.008</value>
+      </greater-than></condition>
+	  </binding>
+		   
+      </key>
+	
+	
+	<key n="72">
+        <name>H</name>
+        <desc>half</desc>
+        <binding>
+          <command>property-assign</command>
+      <property>/controls/engines/engine[0]/throttle</property>
+	  <value>0.52</value>
+          <condition><greater-than>
+<property>/controls/engines/engine[0]/throttle</property>
+	  <value>0.008</value>
+      </greater-than></condition>
+        </binding>
+      </key>
+	
+     <key n="67">
+        <name>C</name>
+        <desc>cruise speed</desc>
+        <binding>
+          <command>property-assign</command>
+      <property>/controls/engines/engine[0]/throttle</property>
+	  <value>0.75</value>
+	  	  <condition><greater-than>
+<property>/controls/engines/engine[0]/throttle</property>
+	  <value>0.008</value>
+      </greater-than></condition>
+        </binding>
+      </key>
+
+	  
+	  <key n="102">
+        <name>f</name>
+        <desc>full ahead</desc>
+        <binding>
+          <command>property-assign</command>
+      <property>/controls/engines/engine[0]/throttle</property>
+	  <value>1</value>
+	  <condition><greater-than>
+         <property>/controls/engines/engine[0]/throttle</property>
+	  <value>0.008</value>
+      </greater-than></condition>
+        </binding>
+      </key>
+
+	  
+	  <key n="127"><name>del</name>
+        <desc>full stop</desc>
+        <binding>
+          <command>property-assign</command>
+      <property>/controls/engines/engine[0]/throttle</property>
+	  <value>0.009</value>
+
+        </binding>
+      </key>
+
+	  
+	  <key n="32"><name>space</name>
+        <desc>Engine</desc>
+        <binding>
+          <command>property-cycle</command>
+					<property>/controls/engines/engine[0]/engage</property>
+					<value>false</value>
+					<value>true</value>
+        </binding>
+		<binding>
+		<command>property-cycle</command>
+      <property>/controls/engines/engine[0]/throttle</property>
+	  <value>0.00</value>
+       <value>0.009</value>
+        </binding>
+      </key>
+
+ 
+
+ 
+ <key n="361">
+        <name>PageDown</name>
+    <repeatable type="bool">true</repeatable>
+    <desc>throttle fac-</desc>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/engines/engine[0]/throttle</property>
+      <step type="double">-0.001421</step>
+       <condition><greater-than>
+          <property>/controls/engines/engine[0]/throttle</property>
+	      <value>0.008</value>
+         </greater-than>
+	   </condition>
+	</binding> 
+  </key>
+
+  <key n="360">
+        <name>PageUp</name>
+    <repeatable type="bool">true</repeatable>
+    <desc>throttle fac+</desc>
+    <binding>
+      <command>property-adjust</command>
+      <property>/controls/engines/engine[0]/throttle</property>
+      <step type="double"> 0.001421</step>
+	  <condition><greater-than>
+         <property>/controls/engines/engine[0]/throttle</property>
+	  <value>0.008</value>
+      </greater-than>
+	  </condition>
+    </binding>
+  </key>
+ 
+ 
+   <key n="106"> 
+    <name>j</name>
+    <desc>Horn</desc>
+    <binding n="0"> 
+      <command>property-toggle</command>
+      <property>/sim/horn</property>
+    </binding>
+    <mod-up>
+      <binding>
+        <command>property-toggle</command>
+        <property>/sim/horn</property>
+      </binding>
+    </mod-up>
+  </key>
+
+ 
+ 
+ 
+ 
+<!--key n="361">
+        <name>PageDown</name>
+    <repeatable type="bool">true</repeatable>
+    <desc>throttle -</desc>
+    <binding>
+	<command>property-toggle</command>
+	<and>
+      <property>autopilot/locks/speed</property>
+     <property>autopilot/locks/speed/speed-with-throttle</property>
+	 </and>
+	  <condition>
+   <property>/controls/engines/engine[0]/throttle</property>
+	  <value>0.009</value>
+      </condition>
+    </binding>					<binding>
+                        <command>nasal</command>
+                        <script>vel.enable()</script>
+                    </binding>	<binding>
+                        <command>nasal</command>
+                        <script>vel.set("speed-with-throttle")</script>
+                    </binding>
+
+	<binding>
+      <command>property-assign</command>
+      <property>/autopilot/settings/target-speed-kt</property>
+      <value>-1</value>
+	  <condition>
+   <property>/controls/engines/engine[0]/throttle</property>
+	  <value>0.009</value>
+      </condition>
+    </binding>
+  </key>
+
+  
+  
+  <key n="360">
+        <name>PageUp</name>
+    <repeatable type="bool">true</repeatable>
+    <desc>throttle +</desc>
+	
+    <binding>
+	<command>property-toggle</command>
+	<and>
+
+     <property>autopilot/locks/speed/speed-with-throttle</property>
+	 </and>
+	  <condition>
+   <property>/controls/engines/engine[0]/throttle</property>
+	  <value>0.009</value>
+      </condition>
+    </binding><binding>
+      <command>property-assign</command>
+      <property>/autopilot/settings/target-speed-kt</property>
+      <value>1</value>
+	  <condition>
+   <property>/controls/engines/engine[0]/throttle</property>
+	  <value>0.009</value>
+      </condition>
+    </binding>
+  </key>
+
+  -->
+  
+</PropertyList>

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+
+
+ <PropertyList>
+
+ <scenario>
+
+  
+  <description>
+
+  </description>
+
+  <entry>
+   <name>USS SanAntonio</name>
+   <callsign>LPD-17</callsign>
+   <type>aircraft</type>
+   <class>heavy</class>
+   
+   <model>
+   <path>Aircraft/U.S. NAVY H.Q/Models/USS-SanAntonio.xml</path>
+   <solid>Cube</solid>
+	<solid>ShapeIndexedFaceS.005</solid>
+	<solid>ShapeIndexedFaceS.003</solid>
+	<solid>ShapeIndexedFaceS.004</solid>
+	<solid>ShapeIndexedFaceS.001</solid>
+	<solid>ShapeIndexedFaceS.007</solid>
+	<solid>ShapeIndexedFaceS.007</solid>
+	<solid>ShapeIndexedFaceS</solid>
+	<solid>ShapeIndexedFaceS.002</solid>
+	<solid>ShapeIndexedFaceSet</solid>
+   <crew>
+     <pilot>
+       <visible type="int">1</visible>
+     </pilot>
+   </crew>
+  </model> 
+
+   <pennant-number>LPD-17</pennant-number>
+   <TACAN-channel-ID>028Y</TACAN-channel-ID> 
+   <type>Amphibious Transport Dock</type>
+
+
+  </entry>
+  
+  
+<!--
+        <entry>
+			<type>escort</type>
+	 -->    <!--model>Models/Maritime/Military/CG-57/CG57.xml</model-->
+	<!--	<model>Aircraft/U.S. NAVY H.Q/Models/USS-LakeChamplain.xml</model>
+			<name>escort</name>
+			<callsign>CG-57</callsign>
+			<turn-radius-ft alias="../../parameters/turn-radius-ft"/>
+			<fixed-turn-radius-ft alias="../../parameters/fixed-turn-radius-ft"/>
+			<rudder-constant alias="../../parameters/rudder-constant"/>
+			<speed-constant alias="../../parameters/speed-constant"/>
+			<roll-factor>2</roll-factor>
+			<station>
+				<range-nm>1.0</range-nm>
+				<brg-deg>190</brg-deg>
+				<parent>USS SanAntonio</parent>
+			</station>
+		</entry>
+  
+  -->
+  
+ </scenario>
+
+</PropertyList>
