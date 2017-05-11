@@ -97,7 +97,7 @@ var check_ground = func {
 		var alt0 = getprop("position/altitude-ft");
 		#print ("Alt0: ", alt0);
 
-		if (ground[1] != nil) {
+		if (ground != nil and ground[1] != nil) {
 				var solid = ground[1].solid;
 				var type = ground[1].names[0];
 				if ( solid ) {
