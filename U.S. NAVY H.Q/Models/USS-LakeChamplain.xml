@@ -20,7 +20,10 @@
 			var speed_Node = self.getNode("velocities/speed-kts", 1);
 			var hdg_Node = self.getNode("orientation/true-heading-deg", 1);
 			var wind_speed_Node = self.getNode("environment/rel-wind-speed-kts", 1);
+			var valid_Node = self.getNode("valid", 1);
 			wind_speed_Node.setDoubleValue(0);
+			hdg_Node.setDoubleValue(0);
+			speed_Node.setDoubleValue(0);
 
 
 			########
@@ -33,7 +36,9 @@
 			setprop("/environment/CG-57/spd-kt", value);
 			value = hdg_Node.getValue();
 			setprop("/environment/CG-57/hdg-deg", value);
-
+			if (valid_Node.getValue() == 0) {
+				return;
+			}
 			settimer(update,0);
 			}
 
@@ -339,7 +344,7 @@
 	
 	<!-- roll adjustment (rolls by rudder angel) -->
 <animation><type>rotate</type>
-<property>orientation/model/roll-deg</property>
+<property>sim/multiplay/generic/float[0]</property>
 <factor>1</factor>
 <center><x-m>0</x-m><y-m>0</y-m><z-m>-0.2</z-m></center>
 <axis><x>0.2</x><y>0</y><z>0</z></axis>

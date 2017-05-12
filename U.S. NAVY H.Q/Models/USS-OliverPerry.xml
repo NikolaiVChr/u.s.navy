@@ -67,11 +67,11 @@
 
 <!-- roll adjustment (rolls by rudder angel) -->
 <animation><type>rotate</type>
-<property>orientation/model/roll-deg</property>
+<property>sim/multiplay/generic/float[0]</property>
 <factor>1</factor>
 	  <condition>
         		    <not-equals>
-							<property>sim/crashed</property>
+							<property>sim/multiplay/generic/int[0]</property>
 							<value>true</value>
 					</not-equals>	  
 	  </condition>

@@ -306,6 +306,17 @@ lights.open();
 			<path>Aircraft/U.S. NAVY H.Q/Systems/pt-boat-filters.xml</path>
 	</autopilot>	
    </systems>			
+
+   <multiplay>
+            <generic>
+                <float n="0" alias="/orientation/model/roll-deg"/>
+                <float n="1" alias="/velocities/groundspeed-kt"/>
+                <float n="2" alias="/gear/gear[0]/compression-norm"/>
+                <float n="3" alias="/ai/models/aircraft[0]/velocities/true-airspeed-kt"/>
+                <int   n="0" alias="/sim/crashed"/>
+            </generic>
+        </multiplay>
+        
  </sim>
 
  

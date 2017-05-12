@@ -18,7 +18,7 @@
 	
 	    <condition>
 	      	<greater-than>
-	     	   <property>ai/models/aircraft[0]/velocities/true-airspeed-kt</property>
+	     	   <property>sim/multiplay/generic/float[3]</property>
 	      	  <value>6</value>
 	     	 </greater-than>
 	    </condition>
@@ -35,7 +35,7 @@
 	      <phi-min-deg>-100</phi-min-deg>
 	      <phi-max-deg>100</phi-max-deg>
 	      <speed-mps>
-  				<property>ai/models/aircraft[0]/velocities/true-airspeed-kt</property>
+  				<property>sim/multiplay/generic/float[3]</property>
 					<factor>10.5</factor>
 <!--
 	        <value>30</value>
@@ -54,7 +54,7 @@
 	    
 	    <counter>
 	      <particles-per-sec>
-  				<property>ai/models/aircraft[0]/velocities/true-airspeed-kt</property>
+  				<property>sim/multiplay/generic/float[3]</property>
 					<factor>3.5</factor>
 	        <spread>6</spread>
 	      </particles-per-sec>
@@ -79,7 +79,7 @@
 	          </alpha>
 	        </color>
 	        <size>
-  				<property>ai/models/aircraft[0]/velocities/true-airspeed-kt</property>
+  				<property>sim/multiplay/generic/float[3]</property>
 					<factor>0.03</factor>
 	        </size>
 	      </start>
