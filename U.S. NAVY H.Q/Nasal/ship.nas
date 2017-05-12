@@ -106,9 +106,9 @@ var check_ground = func {
 						alt0 = ground[0] *M2FT;
 				}
 		} 
-		var alt1 = (alt0+10.2)*FT2M;
+		#var alt1 = (alt0+10.2)*FT2M;
 		#alt0 = 0;
-		var elev = geo.elevation(getprop (lat), getprop (lon), alt1 );
+		var elev = geo.elevation(getprop (lat), getprop (lon));
 		if (elev != nil) {
 			alt0 = elev*M2FT;
 		}
@@ -116,6 +116,9 @@ var check_ground = func {
 				# print ("planing");
 				var climb = getprop(glide_factor) * ( getprop (speed) - getprop (plane_speed));
 				alt0 = alt0+climb;
+		}
+		if (alt0 < 0) {
+			alt0 = 0;
 		}
 		setprop ("position/altitude-ft",alt0);
 		#print (getprop (lat)," ",type," ",alt0);
