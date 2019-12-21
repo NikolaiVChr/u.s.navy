@@ -348,6 +348,8 @@ lights.open();</script>
                 <float n="2" alias="/gear/gear[0]/compression-norm" />
                 <float n="3" alias="/velocities/airspeed-kt" />
                 <int n="0" alias="/sim/crashed" />
+                <int n="1" alias="/controls/lighting/landzone" />
+                <float n="4" alias="/controls/lighting/panel-norm" />
             </generic>
         </multiplay>
     </sim>
@@ -383,7 +385,8 @@ lights.open();</script>
             </engine>
         </engines>
         <lighting>
-            <panel-norm>1</panel-norm>
+            <landzone type="bool">false</landzone>
+            <panel-norm type="double">1</panel-norm>
         </lighting>
     </controls>
     <input>

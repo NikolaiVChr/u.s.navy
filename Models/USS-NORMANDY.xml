@@ -395,10 +395,10 @@
         <object-name>flight-deck-projector-light-ON</object-name>
         <type>material</type>
         <emission>
-            <red-prop>controls/lighting/landzone</red-prop>
-            <green-prop>controls/lighting/landzone</green-prop>
-            <blue-prop>controls/lighting/landzone</blue-prop>
-            <factor-prop>controls/lighting/panel-norm</factor-prop>
+            <red-prop>sim/multiplay/generic/int[1]</red-prop>
+            <green-prop>sim/multiplay/generic/int[1]</green-prop>
+            <blue-prop>sim/multiplay/generic/int[1]</blue-prop>
+            <factor-prop>sim/multiplay/generic/float[4]</factor-prop>
         </emission>
     </animation>
     <animation>
@@ -407,13 +407,13 @@
         <object-name>flight-deck-RSD-rails</object-name>
         <type>material</type>
         <condition>
-            <property>controls/lighting/landzone</property>
+            <property>sim/multiplay/generic/int[1]</property>
         </condition>
         <emission>
             <red>  0.5</red>
             <green>0.5</green>
             <blue> 0.5</blue>
-            <factor-prop>controls/lighting/panel-norm</factor-prop>
+            <factor-prop>sim/multiplay/generic/float[4]</factor-prop>
         </emission>
     </animation>
     <!--******************* LOD *****************-->
