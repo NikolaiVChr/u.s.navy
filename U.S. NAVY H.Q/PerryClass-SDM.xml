@@ -1,45 +1,28 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-
-
-
-
-
+<?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-
-
-
-<environment>
-<wave-amp type="float">0.018</wave-amp>
-<waveloop-count type="float">0</waveloop-count>
-<waveloop-norm type="float">0</waveloop-norm>
-</environment>
-		<controls>
-				<rudder-pos-norm type="float">0.0000</rudder-pos-norm>
-				
-		</controls>
-		<orientation>
-				<roll-deg type="float">0</roll-deg>
-		</orientation>
-		<max-speed-kt type="float">32.7</max-speed-kt>
-        <max-reverser-kt type="float">4</max-reverser-kt>
-        <max-throttle type ="float">0.0000988</max-throttle>		
-        <max-rudder-deflection-deg type="float">42.4</max-rudder-deflection-deg>
-		<max-rudder-advance type ="float">0.08</max-rudder-advance>
-		<rudder-damp type="float">0.1</rudder-damp>
-		<throttle-damp type="float">0.02</throttle-damp>
-		<plane-speed type="float">0.007</plane-speed>
-		<roll-factor type="float">0.0233</roll-factor>
-		<glide-factor type="float">-0.044</glide-factor>
-		<pitch-factor type="float">0.02</pitch-factor>
-		<!--<weight type="float">90</weight>-->
-
-
-		    <weight x="4.2" y="0" z="0" mass-prop="/sim/weight[0]/weight-lb"/>
-            <weight x="0.5" y="0" z="0" mass-prop="/sim/weight[1]/weight-lb"/>
-
-		
+    <environment>
+        <wave-amp type="float">0.03</wave-amp>
+        <waveloop-count type="float">0</waveloop-count>
+        <waveloop-norm type="float">0</waveloop-norm>
+    </environment>
+    <controls>
+        <rudder-pos-norm type="float">0.0000</rudder-pos-norm>
+    </controls>
+    <orientation>
+        <roll-deg type="float">0</roll-deg>
+    </orientation>
+    <max-speed-kt type="float">32.7</max-speed-kt>
+    <max-reverser-kt type="float">4</max-reverser-kt>
+    <max-throttle type="float">0.0000988</max-throttle>
+    <max-rudder-deflection-deg type="float">42.4</max-rudder-deflection-deg>
+    <max-rudder-advance type="float">0.08</max-rudder-advance>
+    <rudder-damp type="float">0.1</rudder-damp>
+    <throttle-damp type="float">0.02</throttle-damp>
+    <plane-speed type="float">0.007</plane-speed>
+    <roll-factor type="float">0.0233</roll-factor>
+    <glide-factor type="float">-0.044</glide-factor>
+    <pitch-factor type="float">0.02</pitch-factor>
+    <!--<weight type="float">90</weight>-->
+    <weight x="4.2" y="0" z="0" mass-prop="/sim/weight[0]/weight-lb" />
+    <weight x="0.5" y="0" z="0" mass-prop="/sim/weight[1]/weight-lb" />
 </PropertyList>
-
-
-

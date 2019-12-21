@@ -9,7 +9,7 @@
   <author>3D: Alexis Bory; FDM: Detlef Faber; combined: T. Henkel</author>
   <status>experimental</status>
   
-
+<variant-of>PerryClass</variant-of>
 - <presets>
   <onground>true</onground> 
   </presets>
@@ -345,11 +345,11 @@ lights.open();
 
 
 
-         	<ai>
+         	<!--<ai>
 			<enabled type="bool">true</enabled>
 			<scenarios-enabled type="bool" userarchive="y">true</scenarios-enabled>
 			<scenario>CG60_AI_Part</scenario>
-			</ai>
+			</ai>-->
 			
  <weight n="0">
         <name>Crew</name>
@@ -373,11 +373,11 @@ lights.open();
 
    <multiplay>
             <generic>
-                <float n="0" alias="/orientation/model/roll-deg"/>
+                <float n="0" alias="/orientation/roll-deg"/>
                 <float n="1" alias="/velocities/groundspeed-kt"/>
                 <float n="2" alias="/gear/gear[0]/compression-norm"/>
-                <float n="3" alias="/ai/models/aircraft[0]/velocities/true-airspeed-kt"/>
-                <int   n="0" alias="/sim/crashed"/>
+                <float n="3" alias="/velocities/airspeed-kt"/>
+                <int n="0" alias="/sim/crashed"/>
             </generic>
         </multiplay>
  </sim>

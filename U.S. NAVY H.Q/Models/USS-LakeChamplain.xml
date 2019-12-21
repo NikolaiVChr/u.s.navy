@@ -3,7 +3,12 @@
 <PropertyList>
 
 	<path>Models/Maritime/Military/CG-57/CG57.ac</path>
-
+	<animation>
+        <!-- to be able to land on deck -->
+        <!--<object-name>flight-deck-large-texture</object-name>-->
+        <object-name>main-body</object-name>
+      	<enable-hot type="bool">true</enable-hot>
+  	</animation>
 	<!-- *** Effects *** -->
 
 	<nasal>

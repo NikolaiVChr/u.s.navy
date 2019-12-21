@@ -5,6 +5,11 @@
 	<author>Naval Postgraduate School SAVAGE project, Vivian Meazza, Heiko Schulz</author>
 	<status>early-production</status>
  <path>Models/Geometry/SanAntonio/LPD17.ac</path>
+ <animation>
+        <!-- to be able to land on deck -->
+        <object-name>ShapeIndexedFaceS.005</object-name>
+      <enable-hot type="bool">true</enable-hot>
+  </animation>
  <nasal>
     <load>
         var wind_node = props.globals.getNode("/environment/wind-speed-kt");
