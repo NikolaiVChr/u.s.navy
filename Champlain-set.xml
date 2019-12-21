@@ -15,11 +15,11 @@
   </presets>
   - 
 - <startup>
-  <splash-texture>Aircraft/U.S. NAVY H.Q/thumbs/Champlain-thumb.png</splash-texture> 
+  <splash-texture>Aircraft/u.s.navy/thumbs/Champlain-thumb.png</splash-texture> 
   </startup>
   - 
 - <sound>
-  <path>Aircraft/U.S. NAVY H.Q/vessel-sound/vessel-sound.xml</path> 
+  <path>Aircraft/u.s.navy/vessel-sound/vessel-sound.xml</path> 
   </sound>
   <flight-model>null</flight-model> 
 
@@ -31,7 +31,7 @@
 	</SDM>
 
   <model>
-   <path>Aircraft/U.S. NAVY H.Q/Models/USS-LakeChamplain.xml</path>
+   <path>Aircraft/u.s.navy/Models/USS-LakeChamplain.xml</path>
    <crew>
      <pilot>
        <visible type="int">1</visible>
@@ -329,7 +329,7 @@
 <binding>
 <command>nasal</command>
 <script>
-var lights = gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/U.S. NAVY H.Q/Systems/lights-dlg.xml");
+var lights = gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/u.s.navy/Systems/lights-dlg.xml");
 lights.open();
 </script>
 </binding>
@@ -339,7 +339,7 @@ lights.open();
 <binding>
 <command>nasal</command>
 <script>
-var lights = gui.Dialog.new("sim/gui/dialogs/ai/dialog", "Aircraft/U.S. NAVY H.Q/Systems/AI.xml");
+var lights = gui.Dialog.new("sim/gui/dialogs/ai/dialog", "Aircraft/u.s.navy/Systems/AI.xml");
 lights.open();
 </script></binding></item></menu></default></menubar>
 
@@ -368,7 +368,7 @@ lights.open();
 			
    <systems>
 	<autopilot>
-			<path>Aircraft/U.S. NAVY H.Q/Systems/pt-boat-filters.xml</path>
+			<path>Aircraft/u.s.navy/Systems/pt-boat-filters.xml</path>
 	</autopilot>	
    </systems>		
 
@@ -435,11 +435,11 @@ lights.open();
 
 	<nasal>
 		<ship>
-			<file>Aircraft/U.S. NAVY H.Q/Nasal/ship.nas</file>
+			<file>Aircraft/u.s.navy/Nasal/ship.nas</file>
 
 		</ship>
       <autopilot>
-			<file>Aircraft/U.S. NAVY H.Q/Nasal/autopilot.nas</file>
+			<file>Aircraft/u.s.navy/Nasal/autopilot.nas</file>
 		</autopilot>
 	</nasal>
 

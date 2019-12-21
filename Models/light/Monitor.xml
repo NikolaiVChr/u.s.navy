@@ -3,7 +3,7 @@
 <PropertyList>
 
 
-<model><name>Monitor-Light</name><path>Aircraft/U.S. NAVY H.Q/Models/light/light-cone.xml</path><condition>
+<model><name>Monitor-Light</name><path>Aircraft/u.s.navy/Models/light/light-cone.xml</path><condition>
   <property>controls/lighting/monitor-light</property>
  </condition><offsets><x-m>  0 </x-m><y-m>  0 </y-m><z-m> 0 </z-m>
  <heading-deg>  0 </heading-deg><pitch-deg>    -8 </pitch-deg></offsets></model>

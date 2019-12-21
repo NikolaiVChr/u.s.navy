@@ -81,7 +81,7 @@
     </animation>
     <!-- Spray # -->
     <model>
-        <path>Aircraft/U.S. NAVY H.Q/Models/Effects/sprays.xml</path>
+        <path>Aircraft/u.s.navy/Models/Effects/sprays.xml</path>
         <offsets>
             <x-m>-44.0</x-m>
             <y-m>0.0</y-m>
@@ -89,7 +89,7 @@
         </offsets>
     </model>
     <model>
-        <path>Aircraft/U.S. NAVY H.Q/Models/Effects/sprayF.xml</path>
+        <path>Aircraft/u.s.navy/Models/Effects/sprayF.xml</path>
         <offsets>
             <x-m>-46.0</x-m>
             <y-m>0.0</y-m>
@@ -108,7 +108,7 @@ xml</path><offsets><x-m> -50.441 </x-m><y-m>   0.000 </y-m><z-m>  -5.377 </z-m><
 nav lights -->
     <model>
         <name>Navigation-Lights</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/RedLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/RedLight.xml</path>
         <offsets>
             <x-m>-24.97</x-m>
             <y-m>-5.98</y-m>
@@ -116,7 +116,7 @@ nav lights -->
         </offsets>
     </model>
     <model>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/GreenLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/GreenLight.xml</path>
         <offsets>
             <x-m>-24.97</x-m>
             <y-m>5.98</y-m>
@@ -126,7 +126,7 @@ nav lights -->
     <!-- pole -->
     <model>
         <name>Mast</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/Monitor.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/Monitor.xml</path>
         <condition>
             <property>controls/lighting/monitor-light</property>
         </condition>
@@ -140,7 +140,7 @@ nav lights -->
     </model>
     <model>
         <name>Coord-Light-Mast</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/RedLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/RedLight.xml</path>
         <condition>
             <greater-than>
                 <property>/sim/time/sun-angle-rad</property>
@@ -155,7 +155,7 @@ nav lights -->
     </model>
     <model>
         <name>Coord-Light-Mast</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/RedLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/RedLight.xml</path>
         <condition>
             <greater-than>
                 <property>/sim/time/sun-angle-rad</property>
@@ -170,7 +170,7 @@ nav lights -->
     </model>
     <!-- landing area -->
     <!--model><name>Landing-Zone-left-monitor</name>
-<path>Aircraft/U.S. NAVY H.Q/Models/light/WhiteLight.xml</path>
+<path>Aircraft/u.s.navy/Models/light/WhiteLight.xml</path>
 <condition>
   <property>controls/lighting/monitor-light</property>
  </condition>
@@ -178,7 +178,7 @@ nav lights -->
  </model>
  
 <model><name>Landing Cone left monitor </name>
-<path>Aircraft/U.S. NAVY H.Q/Models/light/light-cone.xml</path>
+<path>Aircraft/u.s.navy/Models/light/light-cone.xml</path>
 <condition>
   <property>controls/lighting/monitor-light</property>
  </condition>
@@ -187,7 +187,7 @@ nav lights -->
  </model-->
     <model>
         <name>LandDeck</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/light-cone2.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/light-cone2.xml</path>
         <condition>
             <property>controls/lighting/landzone</property>
         </condition>
@@ -201,7 +201,7 @@ nav lights -->
     </model>
     <model>
         <name>LandDeck</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/light-cone2.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/light-cone2.xml</path>
         <condition>
             <property>controls/lighting/landzone</property>
         </condition>
@@ -215,7 +215,7 @@ nav lights -->
     </model>
     <model>
         <name>LandDeck</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/landzone.ac</path>
+        <path>Aircraft/u.s.navy/Models/light/landzone.ac</path>
         <condition>
             <property>controls/lighting/landzone</property>
         </condition>
@@ -229,7 +229,7 @@ nav lights -->
     </model>
     <model>
         <name>Coord-Light</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/WhiteLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/WhiteLight.xml</path>
         <condition>
             <greater-than>
                 <property>/sim/time/sun-angle-rad</property>
@@ -244,7 +244,7 @@ nav lights -->
     </model>
     <model>
         <name>Coord-Light</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/WhiteLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/WhiteLight.xml</path>
         <condition>
             <greater-than>
                 <property>/sim/time/sun-angle-rad</property>
@@ -260,7 +260,7 @@ nav lights -->
     <!-- Deck -->
     <model>
         <name>Deck</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/WhiteLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/WhiteLight.xml</path>
         <condition>
             <property>controls/lighting/decklight</property>
         </condition>
@@ -272,7 +272,7 @@ nav lights -->
     </model>
     <model>
         <name>Deck</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/WhiteLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/WhiteLight.xml</path>
         <condition>
             <property>controls/lighting/decklight</property>
         </condition>
@@ -284,7 +284,7 @@ nav lights -->
     </model>
     <model>
         <name>Deck</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/WhiteLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/WhiteLight.xml</path>
         <condition>
             <property>controls/lighting/decklight</property>
         </condition>
@@ -296,7 +296,7 @@ nav lights -->
     </model>
     <model>
         <name>Deck</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/WhiteLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/WhiteLight.xml</path>
         <condition>
             <property>controls/lighting/decklight</property>
         </condition>
@@ -308,7 +308,7 @@ nav lights -->
     </model>
     <model>
         <name>Deck</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/WhiteLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/WhiteLight.xml</path>
         <condition>
             <property>controls/lighting/decklight</property>
         </condition>
@@ -320,7 +320,7 @@ nav lights -->
     </model>
     <model>
         <name>Deck</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/WhiteLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/WhiteLight.xml</path>
         <condition>
             <property>controls/lighting/decklight</property>
         </condition>
@@ -332,7 +332,7 @@ nav lights -->
     </model>
     <model>
         <name>Deck</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/WhiteLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/WhiteLight.xml</path>
         <condition>
             <property>controls/lighting/decklight</property>
         </condition>
@@ -344,7 +344,7 @@ nav lights -->
     </model>
     <model>
         <name>Deck</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/WhiteLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/WhiteLight.xml</path>
         <condition>
             <property>controls/lighting/decklight</property>
         </condition>
@@ -356,7 +356,7 @@ nav lights -->
     </model>
     <model>
         <name>Deck</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/WhiteLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/WhiteLight.xml</path>
         <condition>
             <property>controls/lighting/decklight</property>
         </condition>
@@ -368,7 +368,7 @@ nav lights -->
     </model>
     <model>
         <name>Deck</name>
-        <path>Aircraft/U.S. NAVY H.Q/Models/light/WhiteLight.xml</path>
+        <path>Aircraft/u.s.navy/Models/light/WhiteLight.xml</path>
         <condition>
             <property>controls/lighting/decklight</property>
         </condition>
@@ -385,7 +385,7 @@ nav lights -->
     </animation>
     <!-- #  Bridge  # -->
     <model>
-        <path>Aircraft/U.S. NAVY H.Q/Models/Bridge/switcher/landing-lights.xml</path>
+        <path>Aircraft/u.s.navy/Models/Bridge/switcher/landing-lights.xml</path>
         <offsets>
             <x-m>-26.346</x-m>
             <y-m>-4.59</y-m>
@@ -393,7 +393,7 @@ nav lights -->
         </offsets>
     </model>
     <model>
-        <path>Aircraft/U.S. NAVY H.Q/Models/Bridge/switcher/Decklight.xml</path>
+        <path>Aircraft/u.s.navy/Models/Bridge/switcher/Decklight.xml</path>
         <offsets>
             <x-m>-26.346</x-m>
             <y-m>-4.520</y-m>
@@ -401,7 +401,7 @@ nav lights -->
         </offsets>
     </model>
     <model>
-        <path>Aircraft/U.S. NAVY H.Q/Models/Bridge/switcher/Bridgelight.xml</path>
+        <path>Aircraft/u.s.navy/Models/Bridge/switcher/Bridgelight.xml</path>
         <offsets>
             <x-m>-26.346</x-m>
             <y-m>-4.45</y-m>
@@ -409,7 +409,7 @@ nav lights -->
         </offsets>
     </model>
     <model>
-        <path>Aircraft/U.S. NAVY H.Q/Models/Bridge/switcher/MFD.xml</path>
+        <path>Aircraft/u.s.navy/Models/Bridge/switcher/MFD.xml</path>
         <offsets>
             <x-m>-26.346</x-m>
             <y-m>-4.38</y-m>
@@ -417,7 +417,7 @@ nav lights -->
         </offsets>
     </model>
     <model>
-        <path>Aircraft/U.S. NAVY H.Q/Models/Bridge/Compass/compass.xml</path>
+        <path>Aircraft/u.s.navy/Models/Bridge/Compass/compass.xml</path>
         <offsets>
             <x-m>-26.15</x-m>
             <y-m>-4.89</y-m>
@@ -427,7 +427,7 @@ nav lights -->
         </offsets>
     </model>
     <model>
-        <path>Aircraft/U.S. NAVY H.Q/Models/Bridge/seats/seat.xml</path>
+        <path>Aircraft/u.s.navy/Models/Bridge/seats/seat.xml</path>
         <offsets>
             <x-m>-24.62</x-m>
             <y-m>-5</y-m>
@@ -436,7 +436,7 @@ nav lights -->
         </offsets>
     </model>
     <model>
-        <path>Aircraft/U.S. NAVY H.Q/Models/Bridge/seats/pedest.ac</path>
+        <path>Aircraft/u.s.navy/Models/Bridge/seats/pedest.ac</path>
         <offsets>
             <x-m>-24.9</x-m>
             <y-m>-5</y-m>
@@ -452,7 +452,7 @@ nav lights -->
  <heading-deg>  0</heading-deg> </offsets></model>
 
 <model><name>Pilot Multi-Function Display</name>
-<path>Aircraft/U.S. NAVY H.Q/Models/Bridge/MFD/MFD.xml</path>
+<path>Aircraft/u.s.navy/Models/Bridge/MFD/MFD.xml</path>
 <offsets><x-m>-26.385</x-m><y-m>-1</y-m><z-m>14.6</z-m><pitch-deg>-24</pitch-deg></offsets></model>
 
 

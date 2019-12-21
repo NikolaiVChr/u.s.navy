@@ -7,7 +7,7 @@
 <engine>
    <name>generators</name>
    <mode>looped</mode>
-   <path>Aircraft/U.S. NAVY H.Q/vessel-sound/vessel1.wav</path>
+   <path>Aircraft/u.s.navy/vessel-sound/vessel1.wav</path>
    
 
 <condition>
@@ -45,7 +45,7 @@
 <turbine>
    <name>turbine-set</name>
    <mode>looped</mode>
-   <path>Aircraft/U.S. NAVY H.Q/vessel-sound/vessel1.wav</path>
+   <path>Aircraft/u.s.navy/vessel-sound/vessel1.wav</path>
    
 
 <condition>
@@ -72,7 +72,7 @@
 
 <name>stamping</name>
    <mode>looped</mode>
-   <path>Aircraft/U.S. NAVY H.Q/vessel-sound/vessel.wav</path>
+   <path>Aircraft/u.s.navy/vessel-sound/vessel.wav</path>
    
 
 <condition>
@@ -100,7 +100,7 @@
 <cruisen>
    <name>stamp2</name>
    <mode>looped</mode>
-   <path>Aircraft/U.S. NAVY H.Q/vessel-sound/vessel.wav</path>
+   <path>Aircraft/u.s.navy/vessel-sound/vessel.wav</path>
    <condition>
     <property>/engines/engine[0]/throttle</property>   
    </condition>
@@ -118,7 +118,7 @@
 <horn>
    <name>wooop</name>
    <mode>looped</mode>
-   <path>Aircraft/U.S. NAVY H.Q/vessel-sound/horn.wav</path>
+   <path>Aircraft/u.s.navy/vessel-sound/horn.wav</path>
    <condition>
       <property>/sim/horn</property> 
 
@@ -138,7 +138,7 @@
 <sea>
    <name>seagull</name>
    <mode>looped</mode>
-   <path>Aircraft/U.S. NAVY H.Q/vessel-sound/newwave.wav</path>
+   <path>Aircraft/u.s.navy/vessel-sound/newwave.wav</path>
    <condition>
  <less-than>
        <property>ai/models/aircraft[0]/velocities/true-airspeed-kt</property>

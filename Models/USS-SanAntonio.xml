@@ -128,22 +128,22 @@
 <offsets><z-m>5.582</z-m></offsets>
 
 <!-- Spray  -->
-<model><path>Aircraft/U.S. NAVY H.Q/Models/Effects/sprays.xml</path> 
+<model><path>Aircraft/u.s.navy/Models/Effects/sprays.xml</path> 
 <offsets><x-m>-104.0</x-m><y-m>0.0</y-m><z-m>-6.2</z-m></offsets></model>
-<model><path>Aircraft/U.S. NAVY H.Q/Models/Effects/sprayF.xml</path> 
+<model><path>Aircraft/u.s.navy/Models/Effects/sprayF.xml</path> 
 <offsets><x-m>-	106.0</x-m><y-m>0.0</y-m><z-m>-5.8</z-m></offsets></model>
 
-<model><path>Aircraft/U.S. NAVY H.Q/Models/Effects/sprayF.xml</path> 
+<model><path>Aircraft/u.s.navy/Models/Effects/sprayF.xml</path> 
 <offsets><x-m>14.0</x-m><y-m>7.5</y-m><z-m>-5.3</z-m></offsets></model>
-<model><path>Aircraft/U.S. NAVY H.Q/Models/Effects/sprayF.xml</path> 
+<model><path>Aircraft/u.s.navy/Models/Effects/sprayF.xml</path> 
 <offsets><x-m>14.0</x-m><y-m>-7.5</y-m><z-m>-5.3</z-m></offsets></model>
 
 <model><name>Navigation-Lights</name>
-<path>Aircraft/U.S. NAVY H.Q/Models/light/RedLight.xml</path>
+<path>Aircraft/u.s.navy/Models/light/RedLight.xml</path>
 <offsets><x-m>   -71</x-m><y-m> -14.84 </y-m><z-m>  15.5 </z-m></offsets>
 </model>
 
-<model><path>Aircraft/U.S. NAVY H.Q/Models/light/GreenLight.xml</path>
+<model><path>Aircraft/u.s.navy/Models/light/GreenLight.xml</path>
 <offsets><x-m>   -71</x-m><y-m> 14.84 </y-m><z-m>  15.5 </z-m></offsets>
 </model>
 

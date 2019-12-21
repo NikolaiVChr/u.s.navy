@@ -8,24 +8,24 @@
             <onground>true</onground>
         </presets>
         <startup>
-            <splash-texture>Aircraft/U.S. NAVY H.Q/thumbs/Perry-thumb.png</splash-texture>
+            <splash-texture>Aircraft/u.s.navy/thumbs/Perry-thumb.png</splash-texture>
         </startup>
         <previews>
             <preview>
                 <type>exterior</type>
                 <splash type="bool">true</splash>
-                <path>Aircraft/U.S. NAVY H.Q/thumbs/Perry-thumb.png</path>
+                <path>Aircraft/u.s.navy/thumbs/Perry-thumb.png</path>
             </preview>
         </previews>
         <sound>
-            <path>Aircraft/U.S. NAVY H.Q/vessel-sound/vessel-sound.xml</path>
+            <path>Aircraft/u.s.navy/vessel-sound/vessel-sound.xml</path>
         </sound>
         <flight-model>null</flight-model>
         <virtual-cockpit archive="y">true</virtual-cockpit>
         <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
         <SDM include="PerryClass-SDM.xml" />
         <model>
-            <path>Aircraft/U.S. NAVY H.Q/Models/USS-OliverPerry.xml</path>
+            <path>Aircraft/u.s.navy/Models/USS-OliverPerry.xml</path>
             <crew>
                 <pilot>
                     <visible type="int">1</visible>
@@ -247,7 +247,7 @@
                         <label>Lights</label>
                         <binding>
                             <command>nasal</command>
-                            <script>var lights = gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/U.S. NAVY H.Q/Systems/lights-dlg.xml");
+                            <script>var lights = gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/u.s.navy/Systems/lights-dlg.xml");
                                     lights.open();</script>
                         </binding>
                     </item>
@@ -255,7 +255,7 @@
                         <label>AI</label>
                         <binding>
                             <command>nasal</command>
-                            <script>var lights = gui.Dialog.new("sim/gui/dialogs/ai/dialog", "Aircraft/U.S. NAVY H.Q/Systems/AI.xml");
+                            <script>var lights = gui.Dialog.new("sim/gui/dialogs/ai/dialog", "Aircraft/u.s.navy/Systems/AI.xml");
                                     lights.open();</script>
                         </binding>
                     </item>
@@ -281,7 +281,7 @@
         </weight>
         <systems>
             <autopilot>
-                <path>Aircraft/U.S. NAVY H.Q/Systems/pt-boat-filters.xml</path>
+                <path>Aircraft/u.s.navy/Systems/pt-boat-filters.xml</path>
             </autopilot>
         </systems>
         <multiplay>
@@ -351,10 +351,10 @@
     </input>
     <nasal>
         <ship>
-            <file>Aircraft/U.S. NAVY H.Q/Nasal/ship.nas</file>
+            <file>Aircraft/u.s.navy/Nasal/ship.nas</file>
         </ship>
         <autopilot>
-            <file>Aircraft/U.S. NAVY H.Q/Nasal/autopilot.nas</file>
+            <file>Aircraft/u.s.navy/Nasal/autopilot.nas</file>
         </autopilot>
     </nasal>
 </PropertyList>

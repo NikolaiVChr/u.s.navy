@@ -362,10 +362,10 @@
 
 
 <!-- Spray # -->
-<model><path>Aircraft/U.S. NAVY H.Q/Models/Effects/sprays.xml</path> 
+<model><path>Aircraft/u.s.navy/Models/Effects/sprays.xml</path> 
 <offsets><x-m>-44.0</x-m><y-m>0.0</y-m><z-m>1.2</z-m></offsets>
 </model>
-<model><path>Aircraft/U.S. NAVY H.Q/Models/Effects/sprayF.xml</path> 
+<model><path>Aircraft/u.s.navy/Models/Effects/sprayF.xml</path> 
 <offsets><x-m>-46.0</x-m><y-m>0.0</y-m><z-m>0.8</z-m></offsets></model>
 
 	
