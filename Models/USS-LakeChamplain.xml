@@ -391,6 +391,32 @@
             <z-m>32.5602</z-m>
         </offsets>
     </model>
+    <animation>
+        <object-name>flight-deck-projector-light-ON</object-name>
+        <type>material</type>
+        <emission>
+            <red-prop>controls/lighting/landzone</red-prop>
+            <green-prop>controls/lighting/landzone</green-prop>
+            <blue-prop>controls/lighting/landzone</blue-prop>
+            <factor-prop>controls/lighting/panel-norm</factor-prop>
+        </emission>
+    </animation>
+    <animation>
+        <object-name>flight-deck-large-texture</object-name>
+        <object-name>decks-white-texture</object-name>
+        <object-name>flight-deck-RSD-rails</object-name>
+        <type>material</type>
+        <condition>
+            <property>controls/lighting/landzone</property>
+        </condition>
+        <emission>
+            <red>  0.5</red>
+            <green>0.5</green>
+            <blue> 0.5</blue>
+            <factor-prop>controls/lighting/panel-norm</factor-prop>
+        </emission>
+    </animation>
+    
     <!--******************* LOD *****************-->
     <animation>
         <type>range</type>
