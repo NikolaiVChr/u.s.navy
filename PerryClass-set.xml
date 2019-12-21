@@ -9,7 +9,7 @@
             <FDM type="int">2</FDM>
             <systems type="int">1</systems>
             <cockpit type="int">0</cockpit>
-            <model type="int">5</model>
+            <model type="int">4</model>
         </rating>
         <status>experimental</status>
         <presets>
@@ -18,8 +18,13 @@
         <previews>
             <preview>
                 <type>exterior</type>
-                <splash type="bool">true</splash>
+                <splash type="bool">false</splash>
                 <path>thumbs/Perry-thumb.png</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>thumbs/perry.png</path>
             </preview>
         </previews>
         <sound>

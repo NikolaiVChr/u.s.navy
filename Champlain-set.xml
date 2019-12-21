@@ -19,8 +19,13 @@
         <previews>
             <preview>
                 <type>exterior</type>
-                <splash type="bool">true</splash>
+                <splash type="bool">false</splash>
                 <path>thumbs/Champlain-thumb.png</path>
+            </preview>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>thumbs/champ.png</path>
             </preview>
         </previews>
         <sound>
