@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-    <path>Models/Maritime/Military/CG-57-high-detail/CG-57.ac</path>
+    <path>Aircraft/u.s.navy/Models/CG-57-high-detail/CG-57.ac</path>
     <animation>
         <!-- to be able to land on deck -->
         <object-name>flight-deck-large-texture</object-name>
