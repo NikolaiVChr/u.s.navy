@@ -6,7 +6,15 @@
  <sim>
 
   <description>USS Lake Champlain</description>
-  <author>3D: Alexis Bory; FDM: Detlef Faber; combined: T. Henkel</author>
+  <author>Alexis Bory (3D), Detlef Faber (FDM), T. Henkel (Combined), Nikolai V. Chr. (Misc. fixes)</author>
+  <minimum-fg-version>2018.3</minimum-fg-version>
+  <long-description>Ticonderoga Class or CG-57 is a missile-cruiser ship type from the 1980'ties.</long-description>
+  <rating>
+      <FDM type="int">2</FDM>
+      <systems type="int">1</systems>
+      <cockpit type="int">0</cockpit>
+      <model type="int">5</model>
+  </rating>
   <status>experimental</status>
   
 <variant-of>PerryClass</variant-of>
