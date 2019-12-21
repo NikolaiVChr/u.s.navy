@@ -282,7 +282,7 @@
   
    -->
     <effect>
-        <inherits-from>/Effects/model-transparent</inherits-from>
+        <inherits-from>Effects/model-transparent</inherits-from>
         <object-name>net</object-name>
         <object-name>SPS-49-net-transparent</object-name>
     </effect>
