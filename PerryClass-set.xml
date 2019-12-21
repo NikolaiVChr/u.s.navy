@@ -3,18 +3,23 @@
     <sim>
         <description>USS Oliver Perry</description>
         <author>Alexis Bory (3D), Detlef Faber (FDM), T. Henkel (Combined), Nikolai V. Chr. (Misc. fixes)</author>
+        <minimum-fg-version>2018.3</minimum-fg-version>
+        <long-description>Perry Class or FFG-7 is a general purpose escort ship type from mid 1970'ties.</long-description>
+        <rating>
+            <FDM type="int">1</FDM>
+            <systems type="int">1</systems>
+            <cockpit type="int">1</cockpit>
+            <model type="int">5</model>
+        </rating>
         <status>experimental</status>
         <presets>
             <onground>true</onground>
         </presets>
-        <startup>
-            <splash-texture>Aircraft/u.s.navy/thumbs/Perry-thumb.png</splash-texture>
-        </startup>
         <previews>
             <preview>
                 <type>exterior</type>
                 <splash type="bool">true</splash>
-                <path>Aircraft/u.s.navy/thumbs/Perry-thumb.png</path>
+                <path>thumbs/Perry-thumb.png</path>
             </preview>
         </previews>
         <sound>
