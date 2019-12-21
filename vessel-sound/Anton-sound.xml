@@ -14,7 +14,7 @@
      <property>/controls/engines/engine/throttle</property>
         </condition>
    <volume>
-    <property>ai/models/aircraft[0]/velocities/true-airspeed-kt</property>
+    <property>velocities/airspeed-kt</property>
     <factor>1</factor>
     <min>0.08</min>
     <max>0.8</max>
@@ -28,7 +28,7 @@
  </volume>
   
   <pitch>
-    <property>ai/models/aircraft[0]/velocities/true-airspeed-kt</property>
+    <property>velocities/airspeed-kt</property>
 
     <factor>0.012</factor>
     <min>0.3</min>
@@ -56,14 +56,14 @@
      </less-than>
    </condition>
  <volume>
-    <property>ai/models/aircraft[0]/velocities/true-airspeed-kt</property>
+    <property>velocities/airspeed-kt</property>
     <factor>0.0082</factor>
     <min>0.0000000008</min>
     <max>0.58</max>
     
    </volume> 
   
-  <pitch><property>ai/models/aircraft[0]/velocities/true-airspeed-kt</property><factor>0.04</factor><min>0.5</min><max>6.5</max><offset>0.15</offset></pitch> </turbine>
+  <pitch><property>velocities/airspeed-kt</property><factor>0.04</factor><min>0.5</min><max>6.5</max><offset>0.15</offset></pitch> </turbine>
 
 
 
@@ -75,17 +75,17 @@
    
 
 <condition>
-     <property>ai/models/aircraft[0]/velocities/true-airspeed-kt</property>
+     <property>velocities/airspeed-kt</property>
        </condition>
    <volume>
-    <property>ai/models/aircraft[0]/velocities/true-airspeed-kt</property>
+    <property>velocities/airspeed-kt</property>
     <factor>1</factor>
     <min>0.000000008</min>
     <max>30.08</max>
     
    </volume>   
   <pitch>
-    <property>ai/models/aircraft[0]/velocities/true-airspeed-kt</property>
+    <property>velocities/airspeed-kt</property>
 
     <factor>0.0000028</factor>
     <min>0.00003</min>
@@ -140,7 +140,7 @@
    <path>Aircraft/u.s.navy/vessel-sound/newwave.wav</path>
    <condition>
  <less-than>
-       <property>ai/models/aircraft[0]/velocities/true-airspeed-kt</property>
+       <property>velocities/airspeed-kt</property>
        <value>15</value>
      </less-than>   </condition>
    <volume>
