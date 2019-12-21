@@ -18,15 +18,19 @@
   <status>experimental</status>
   
 <variant-of>PerryClass</variant-of>
-- <presets>
+ <presets>
   <onground>true</onground> 
   </presets>
-  - 
-- <startup>
-  <splash-texture>Aircraft/u.s.navy/thumbs/Champlain-thumb.png</splash-texture> 
-  </startup>
-  - 
-- <sound>
+   
+  <previews>
+            <preview>
+                <type>exterior</type>
+                <splash type="bool">true</splash>
+                <path>thumbs/Champlain-thumb.png</path>
+            </preview>
+        </previews>
+   
+ <sound>
   <path>Aircraft/u.s.navy/vessel-sound/vessel-sound.xml</path> 
   </sound>
   <flight-model>null</flight-model> 
