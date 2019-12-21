@@ -1,18 +1,14 @@
-<?xml version="1.0"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-
-	<path>Models/Maritime/Military/CG-57-high-detail/CG-57.ac</path>
+    <path>Models/Maritime/Military/CG-57-high-detail/CG-57.ac</path>
     <animation>
         <!-- to be able to land on deck -->
         <object-name>flight-deck-large-texture</object-name>
-      	<enable-hot type="bool">true</enable-hot>
-  	</animation>
-	<!-- *** Effects *** -->
-
-	<nasal>
-		<load>
-			print("LOAD CG-57", cmdarg().getPath());
+        <enable-hot type="bool">true</enable-hot>
+    </animation>
+    <!-- *** Effects *** -->
+    <nasal>
+        <load>print("LOAD CG-57", cmdarg().getPath());
 
 			var fg_root = getprop("/sim/fg-root");
 			var self = cmdarg();
@@ -34,42 +30,36 @@
 			# the main loop
 
 			var update = func {
-			var value = wind_speed_Node.getValue();
-			setprop("/environment/CG-57/rel-wind-speed-kts", value);
-			value = speed_Node.getValue();
-			setprop("/environment/CG-57/spd-kt", value);
-			value = hdg_Node.getValue();
-			setprop("/environment/CG-57/hdg-deg", value);
-			if (valid_Node.getValue() == 0) {
-				return;
-			}
-			settimer(update,0);
+				var value = wind_speed_Node.getValue();
+				setprop("/environment/CG-57/rel-wind-speed-kts", value);
+				value = speed_Node.getValue();
+				setprop("/environment/CG-57/spd-kt", value);
+				value = hdg_Node.getValue();
+				setprop("/environment/CG-57/hdg-deg", value);
+				if (valid_Node.getValue() == 0) {
+					return;
+				}
+				settimer(update,0);
 			}
 
 
 			########
 			#start the main loop
 			update();
-
 		</load>
-	</nasal>
-
-	<unload>
-		#print("UNLOAD CG-57 ", cmdarg().getPath());
-	</unload>
-
-	<model>
-		<name>Ensign</name>
-		<path>Models/Maritime/Military/CG-57/ensign.xml</path>
-		<offsets>
-<!--32.7427	26.6797	0.0628354-->
-			<x-m>32.7427</x-m>
-			<y-m>0.0</y-m>
-			<z-m>26.6797</z-m>
-		</offsets>
-	</model>
-
-<!--	<model>
+    </nasal>
+    <unload>#print("UNLOAD CG-57 ", cmdarg().getPath());</unload>
+    <model>
+        <name>Ensign</name>
+        <path>Models/Maritime/Military/CG-57/ensign.xml</path>
+        <offsets>
+            <!--32.7427	26.6797	0.0628354-->
+            <x-m>32.7427</x-m>
+            <y-m>0.0</y-m>
+            <z-m>26.6797</z-m>
+        </offsets>
+    </model>
+    <!--	<model>
     <name>Bow-Wave</name>
     <path>Models/Geometry/Nimitz/Models/Effects/bow_wave_carrier.xml</path>
     <offsets>
@@ -291,110 +281,109 @@
   
   
    -->
-   
-   <effect>
-    <inherits-from>/Effects/model-transparent</inherits-from>
-    <object-name>net</object-name>
-    <object-name>SPS-49-net-transparent</object-name>
-  </effect>
-  
-  <animation>
-		<type>rotate</type>
-		<object-name>nav-radar-mast</object-name>
-		<property>/sim/time/elapsed-sec</property>
-		<factor>40</factor>
-		<center>
-			<x-m>0.356049</x-m>
-			<y-m>2.06902</y-m>
-			<z-m>0</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-	
-	<animation>
-		<type>rotate</type>
-		<object-name>nav-radar-bridge</object-name>
-		<property>/sim/time/elapsed-sec</property>
-		<factor>85</factor>
-		<center>
-			<x-m>-10.0043</x-m>
-			<y-m>0.00521</y-m>
-			<z-m>0</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>rotate</type>
-		<object-name>SPS-49-Antenna</object-name>
-		<property>/sim/time/elapsed-sec</property>
-		<factor>50</factor>
-		<center>
-			<x-m>29.6884</x-m>
-			<y-m>0</y-m>
-			<z-m>27.6858</z-m>
-		</center>
-		<axis>
-			<x>0</x>
-			<y>0</y>
-			<z>1</z>
-		</axis>
-	</animation>
-	
-	
-	<!-- roll adjustment (rolls by rudder angel) -->
-<animation><type>rotate</type>
-<property>sim/multiplay/generic/float[0]</property>
-<factor>0.88</factor>
-<center><x-m>0</x-m><y-m>0</y-m><z-m>-0.2</z-m></center>
-<axis><x>0.2</x><y>0</y><z>0</z></axis>
-</animation>
-
-
-
-
-
-
-
-<!-- Spray # -->
-<model><path>Aircraft/u.s.navy/Models/Effects/sprays.xml</path> 
-<offsets><x-m>-44.0</x-m><y-m>0.0</y-m><z-m>1.2</z-m></offsets>
-</model>
-<model><path>Aircraft/u.s.navy/Models/Effects/sprayF.xml</path> 
-<offsets><x-m>-46.0</x-m><y-m>0.0</y-m><z-m>0.8</z-m></offsets></model>
-
-	
-
-
-	<!--******************* LOD *****************-->
-
-	<animation>
-		<type>range</type>
-		<min-m>0</min-m>
-		<max-m>15000</max-m>
-	</animation>
-
-	<animation>
-		<type>range</type>
-		<object-name>railing</object-name>
-		<!--<object-name>Net</object-name>
+    <effect>
+        <inherits-from>/Effects/model-transparent</inherits-from>
+        <object-name>net</object-name>
+        <object-name>SPS-49-net-transparent</object-name>
+    </effect>
+    <animation>
+        <type>rotate</type>
+        <object-name>nav-radar-mast</object-name>
+        <property>/sim/time/elapsed-sec</property>
+        <factor>40</factor>
+        <center>
+            <x-m>0.356049</x-m>
+            <y-m>2.06902</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>nav-radar-bridge</object-name>
+        <property>/sim/time/elapsed-sec</property>
+        <factor>85</factor>
+        <center>
+            <x-m>-10.0043</x-m>
+            <y-m>0.00521</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+    <animation>
+        <type>rotate</type>
+        <object-name>SPS-49-Antenna</object-name>
+        <property>/sim/time/elapsed-sec</property>
+        <factor>50</factor>
+        <center>
+            <x-m>29.6884</x-m>
+            <y-m>0</y-m>
+            <z-m>27.6858</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>
+    </animation>
+    <!-- roll adjustment (rolls by rudder angel) -->
+    <animation>
+        <type>rotate</type>
+        <property>sim/multiplay/generic/float[0]</property>
+        <factor>0.88</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>-0.2</z-m>
+        </center>
+        <axis>
+            <x>0.2</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+    <!-- Spray # -->
+    <model>
+        <path>Aircraft/u.s.navy/Models/Effects/sprays.xml</path>
+        <offsets>
+            <x-m>-44.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>1.2</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Aircraft/u.s.navy/Models/Effects/sprayF.xml</path>
+        <offsets>
+            <x-m>-46.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.8</z-m>
+        </offsets>
+    </model>
+    <!--******************* LOD *****************-->
+    <animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>15000</max-m>
+    </animation>
+    <animation>
+        <type>range</type>
+        <object-name>railing</object-name>
+        <!--<object-name>Net</object-name>
 		<object-name>400ft</object-name>-->
-		<max-m>3000</max-m>
-	</animation>
-
-	<!--<animation>
+        <max-m>3000</max-m>
+    </animation>
+    <!--<animation>
 		<type>range</type>
 		<object-name>1000m</object-name>
 		<min-m>0</min-m>
 		<max-m>3000</max-m>
 	</animation>-->
-
 </PropertyList>
