@@ -367,6 +367,30 @@
             <z-m>0.8</z-m>
         </offsets>
     </model>
+    <model>
+        <path>Aircraft/u.s.navy/Models/Effects/lights/white.xml</path>
+        <offsets>
+            <x-m>51</x-m>
+            <y-m>0.016201</y-m>
+            <z-m>18.0546</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Aircraft/u.s.navy/Models/Effects/lights/pos-left.xml</path>
+        <offsets>
+            <x-m>2.4424</x-m>
+            <y-m>-6.06729</y-m>
+            <z-m>32.5602</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Aircraft/u.s.navy/Models/Effects/lights/pos-right.xml</path>
+        <offsets>
+            <x-m>2.4424</x-m>
+            <y-m>6.06729</y-m>
+            <z-m>32.5602</z-m>
+        </offsets>
+    </model>
     <!--******************* LOD *****************-->
     <animation>
         <type>range</type>
