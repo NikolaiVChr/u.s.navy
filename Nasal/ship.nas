@@ -145,10 +145,11 @@ var update_waveloop = func () {
 		var wave_amp = getprop ("sim/SDM/environment/wave-amp");
 		var wave_count = getprop ("sim/SDM/environment/waveloop-count");
 		var wave_norm = getprop ("sim/SDM/environment/waveloop-norm");
+		var wind = getprop("environment/wind-speed-kt");
 		#print (wave_norm);
 		var next = wave_count + wave_amp;
 		setprop ("sim/SDM/environment/waveloop-count", next);
-		setprop ("sim/SDM/environment/waveloop-norm",math.sin( next ));
+		setprop ("sim/SDM/environment/waveloop-norm",math.sin( next )*wind*0.2);
 }
 
 setlistener("/sim/signals/fdm-initialized",init);
