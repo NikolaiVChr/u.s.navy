@@ -124,7 +124,7 @@ var check_ground = func {
 				alt0 = alt0+climb;
 		}
 		if (alt0 < 0) {
-			alt0 = 0;
+			#alt0 = 0; some waters are below 0
 		}
 		setprop ("position/altitude-ft",alt0);
 		#print (getprop (lat)," ",type," ",alt0);
