@@ -1,5 +1,3 @@
 Weapons
-Lights
 Companions
 Tune roll and pitch
-Dark effects in dark.

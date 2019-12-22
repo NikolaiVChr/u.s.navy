@@ -115,6 +115,7 @@
         <sea>
             <name>seagull</name>
             <mode>looped</mode>
+            <type>avionics</type>
             <path>Aircraft/u.s.navy/vessel-sound/newwave.wav</path>
             <condition>
                 <less-than>
@@ -192,5 +193,18 @@
                 <property>sound/dist-thunder3</property>
             </volume>
         </thunder3>
+        <heli>
+            <name>mary</name>
+            <mode>looped</mode>
+            <path>Aircraft/u.s.navy/vessel-sound/mary.wav</path>
+            <condition>
+                <property>controls/Mary-ondeck</property>
+            </condition>
+            <position>
+                <x> 63.4466 </x>
+                <y>  0 </y>
+                <z> 11 </z>
+            </position>
+        </heli>
     </fx>
 </PropertyList>
