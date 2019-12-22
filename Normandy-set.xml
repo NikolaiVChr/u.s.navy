@@ -42,9 +42,6 @@
                     <visible type="int">1</visible>
                 </pilot>
             </crew>
-            <sound>
-                <path>Aircraft/u.s.navy/vessel-sound/mp-sound.xml</path>
-            </sound>
         </model>
         <view n="bridge-star ##!unused">
             <internal archive="y">true</internal>

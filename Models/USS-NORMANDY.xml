@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
     <path>Models/Maritime/Military/CG-57-high-detail/CG-57.ac</path>
+    <sound>
+        <path>Aircraft/u.s.navy/vessel-sound/mp-sound.xml</path>
+    </sound>
     <animation>
         <!-- to be able to land on deck -->
         <object-name>flight-deck-large-texture</object-name>
