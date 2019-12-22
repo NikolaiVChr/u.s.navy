@@ -14,12 +14,12 @@
                 <min>0.8</min>
                 <max>7.8</max>
             </volume>
-            <volume>
+            <!--<volume>
                 <property>/orientation/beta-deg</property>
                 <type>log</type>
                 <min>0.25</min>
                 <max>1</max>
-            </volume>
+            </volume>-->
             <!--pitch>
     <property>ai/models/aircraft[0]/velocities/true-airspeed-kt</property>
 
@@ -82,12 +82,12 @@
             <condition>
                 <property>/engines/engine[0]/throttle</property>
             </condition>
-            <volume>
+            <!--<volume>
                 <property>/orientation/alpha-deg</property>
                 <type>log</type>
                 <min>0.5</min>
                 <max>2.0</max>
-            </volume>
+            </volume>-->
             <volume>
                 <property>/engines/engine[0]/throttle</property>
                 <factor>0.25</factor>
@@ -103,14 +103,14 @@
                 <property>/sim/horn</property>
             </condition>
             <volume>
-                <factor>2</factor>
+                <factor>1</factor>
             </volume>
-            <volume>
+            <!--<volume>
                 <property>/orientation/alpha-deg</property>
                 <type>log</type>
                 <min>0.5</min>
                 <max>2.0</max>
-            </volume>
+            </volume>-->
         </horn>
         <sea>
             <name>seagull</name>
