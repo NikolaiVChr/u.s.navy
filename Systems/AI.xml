@@ -21,7 +21,18 @@
 				<command>dialog-apply</command>
 			</binding>
 			<live>true</live>
-		</checkbox>	<checkbox>
+		</checkbox>
+		
+		<checkbox>
+			<label>Deck doors</label>
+			<property>controls/doors</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
+		
+			<checkbox>
 			<label>Mary behind</label>
 			<property>controls/Mary</property>
 			<binding>
