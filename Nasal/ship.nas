@@ -58,7 +58,13 @@ var update_AI_position = func {
 		setprop("velocities/airspeed-kt",cspeed);
 		setprop("velocities/groundspeed-kt",cspeed);
 		var coord = geo.aircraft_position();
-		coord.apply_course_distance(getprop ("orientation/heading-deg"), looptime*cspeed*NM2M/(60*60));
+		var push = getprop("sim/model/pushback/target-speed-fps");
+		if (push == nil) push = 0;
+		var push2 = getprop("sim/model/pushback/position-norm");
+		if (push2 == nil) push2 = 0;
+		if (push2 != 1) push2 = 0;
+		push *= push2;
+		coord.apply_course_distance(getprop ("orientation/heading-deg"), looptime*cspeed*NM2M/(60*60)+looptime*push*FT2M);
 		setprop ("position/latitude-deg", coord.lat());
 		setprop ("position/longitude-deg", coord.lon());
 		#setprop ("position/altitude-ft" , 0);
@@ -72,8 +78,11 @@ var update_controls = func {
 		var head = getprop ("orientation/heading-deg");
 		#print(head);
 		#print(head+ail*getprop(rudder_adv));
-
- 		interpolate ("orientation/heading-deg", head+ail*getprop(rudder_adv)*getprop (throttle)*0.5, looptime);
+		var push = getprop("sim/model/pushback/target-speed-fps");
+		if (push == nil) push = 0;
+		var push2 = getprop("sim/model/pushback/position-norm");
+		if (push2 == nil) push2 = 0;		
+ 		interpolate ("orientation/heading-deg", head+ail*getprop(rudder_adv)*push2*getprop (throttle)*0.5+ail*getprop(rudder_adv)*push2*push, looptime);
 		
 	}
 

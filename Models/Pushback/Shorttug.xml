@@ -131,7 +131,6 @@
    <type>select</type>
    <condition>
      <property>sim/model/pushback/enabled</property>
-     <property>gear/gear[0]/wow</property>
    </condition>
  </animation>
  
@@ -143,8 +142,8 @@
        <value>0.99</value>
      </greater-than>
    </condition>
-   <property>gear/gear[0]/steering-norm</property>
-   <factor>-70</factor>
+   <property>controls/flight/aileron</property>
+   <factor>-30</factor>
    <center>
      <x-m>6.451</x-m>
      <y-m>0</y-m>
@@ -175,17 +174,6 @@
     </axis>
   </animation>
   
-  <!-- compensate for gear compression -->
-  <animation>
-    <type>translate</type>
-    <property>gear/gear[0]/compression-ft</property>
-    <factor>0.3048</factor>
-    <axis>
-      <x>0</x>
-      <y>0</y>
-      <z>1</z>
-    </axis>
-  </animation>
 
   <!-- precalculated sin and asin to move the pushback on a 90deg arc, 25m radius -->
   <animation>

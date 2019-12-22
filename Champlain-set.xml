@@ -41,7 +41,13 @@
                 <pilot>
                     <visible type="int">1</visible>
                 </pilot>
-            </crew>            
+            </crew>
+            <pushback>
+                <kp type="double">100</kp>
+                <ki type="double">25</ki>
+                <kd type="double">0</kd>
+                <position-norm type="double">0</position-norm>
+            </pushback>      
         </model>
         <view n="bridge-star ##!unused">
             <internal archive="y">true</internal>
@@ -297,7 +303,7 @@
                     <label>US Naval Research HQ</label>
                     <enabled type="bool">true</enabled>
                     <item>
-                        <label>Schlepper</label>
+                        <label>Tugboat</label>
                         <name>Tugboat</name>
                         <binding>
                             <command>dialog-show</command>

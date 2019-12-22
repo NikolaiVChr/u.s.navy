@@ -41,6 +41,12 @@
                     <visible type="int">1</visible>
                 </pilot>
             </crew>
+            <pushback>
+                <kp type="double">100</kp>
+                <ki type="double">25</ki>
+                <kd type="double">0</kd>
+                <position-norm type="double">0</position-norm>
+            </pushback>
         </model>
         <view n="bridge-star">
             <internal archive="y">true</internal>

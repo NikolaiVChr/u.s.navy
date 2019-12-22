@@ -556,6 +556,15 @@
             <z>0</z>
         </axis>
     </animation>
+    <model>
+    	<name>Pushback</name>
+    	<path>Aircraft/u.s.navy/Models/Pushback/Shorttug.xml</path>
+		<offsets>
+			<x-m> -60.000 </x-m>
+			<y-m>   0.000 </y-m>
+			<z-m>   0.000 </z-m>
+		</offsets>
+	</model>
     <!--******************* LOD *****************-->
     <animation>
         <type>range</type>
