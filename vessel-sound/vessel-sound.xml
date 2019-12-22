@@ -205,6 +205,8 @@
                 <y>  0 </y>
                 <z> 11 </z>
             </position>
+            <reference-dist>25</reference-dist>
+            <max-dist>250</max-dist>
         </heli>
     </fx>
 </PropertyList>

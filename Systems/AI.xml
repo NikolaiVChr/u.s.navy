@@ -1,134 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <PropertyList>
-
-	<name>lights-dlg</name>
-	<layout>vbox</layout>
-
-	<text>
-		<label>Battlegroup Controller</label>
-	</text>
-
-	<hrule />
-
-	<group>
-		<layout>vbox</layout>
-
-	<checkbox>
-			<label>Mary ondeck</label>
-			<property>controls/Mary-ondeck</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox>
-		
-		<checkbox>
-			<label>Deck doors</label>
-			<property>controls/doors</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox>
-		
-			<checkbox>
-			<label>Mary behind</label>
-			<property>controls/Mary</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox>
-
-		<checkbox>
-			<label>BattleGroup</label>
-			<property>controls/Mary-X</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox>
-
-		<checkbox>
-			<label>Carrier</label>
-			<property>controls</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox>
-	<checkbox>
-			<label>any</label>
-			<property>controls</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox>
-
-		
-			
-
-		<text>
-			<label>Searcher</label>
-		</text>
-
-		<slider>
-			<width>200</width>
-			<property>controls/lighting/wtf</property>
-			<step>0.05</step>
-			<min>1</min>
-			<max>3</max>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-		</slider>
-
-		<text>
-			<label>Deck dimmer</label>
-		</text>
-
-		<slider>
-			<width>200</width>
-			<property>controls/lighting/wtf</property>
-			<step>0.05</step>
-			<min>0</min>
-			<max>1</max>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-		</slider>
-
-		<hrule />
-
-	<checkbox>
-			<label>Master</label>
-			<property>/controls/engines/engine[0]/throttle</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox>
-	</group>
-
-	<hrule />
-
-	<group>
-		<layout>vbox</layout>
-
-		<button>
-			<legend>Close</legend>
-			<default>true</default>
-			<key>Esc</key>
-		<padding>10</padding>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<binding>
-				<command>dialog-close</command>
-			</binding>
-		</button>
-	</group>
-
+    <name>lights-dlg</name>
+    <layout>vbox</layout>
+    <text>
+        <label>Battlegroup Controller</label>
+    </text>
+    <hrule />
+    <group>
+        <layout>vbox</layout>
+        <checkbox>
+            <label>Mary ondeck</label>
+            <property>controls/Mary-ondeck</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+        <checkbox>
+            <label>Deck doors</label>
+            <property>controls/doors</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+        <checkbox>
+            <label>Mary behind</label>
+            <property>controls/Mary</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+        <checkbox>
+            <label>BattleGroup</label>
+            <property>controls/Mary-X</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+        <checkbox>
+            <label>Carrier</label>
+            <property>controls</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+        <checkbox>
+            <label>any</label>
+            <property>controls</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+        <text>
+            <label>Searcher (Perry)</label>
+        </text>
+        <slider>
+            <width>200</width>
+            <property>controls/lighting/wtf</property>
+            <step>0.05</step>
+            <min>1</min>
+            <max>3</max>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+        </slider>
+        <text>
+            <label>Deck brightness</label>
+        </text>
+        <slider>
+            <width>200</width>
+            <property>controls/lighting/wtf</property>
+            <step>0.05</step>
+            <min>0</min>
+            <max>1</max>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+        </slider>
+        <!--<hrule />
+        <checkbox>
+            <label>Master</label>
+            <property>/controls/engines/engine[0]/throttle</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>-->
+    </group>
+    <hrule />
+    <group>
+        <layout>vbox</layout>
+        <button>
+            <legend>Close</legend>
+            <default>true</default>
+            <key>Esc</key>
+            <padding>10</padding>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+    </group>
 </PropertyList>

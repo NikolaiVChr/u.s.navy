@@ -1,104 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <PropertyList>
-
-	<name>lights-dlg</name>
-	<layout>vbox</layout>
-
-	<text>
-		<label>Vessel Light Controller</label>
-	</text>
-
-	<hrule />
-
-	<group>
-		<layout>vbox</layout>
-
-	<checkbox>
-			<label>Flighdeck</label>
-			<property>controls/lighting/landzone</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox>
-		
-		
-
-		<checkbox>
-			<label>Monitor</label>
-			<property>controls/lighting/monitor-light</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox>
-
-
-	<checkbox>
-			<label>Deck</label>
-			<property>controls/lighting/decklight</property>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<live>true</live>
-		</checkbox>
-
-		
-			
-
-		<text>
-			<label>Searcher</label>
-		</text>
-
-		<slider>
-			<width>200</width>
-			<property>sim/monitor/brightness</property>
-			<step>0.05</step>
-			<min>0</min>
-			<max>5</max>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-		</slider>
-
-		<text>
-			<label>Deck dimmer</label>
-		</text>
-
-		<slider>
-			<width>200</width>
-			<property>/controls/lighting/panel-norm</property>
-			<step>0.02</step>
-			<min>0</min>
-			<max>1</max>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-		</slider>
-
-		<hrule />
-
-	
-	</group>
-
-	<hrule />
-
-	<group>
-		<layout>vbox</layout>
-
-		<button>
-			<legend>Close</legend>
-			<default>true</default>
-			<key>Esc</key>
-		<padding>10</padding>
-			<binding>
-				<command>dialog-apply</command>
-			</binding>
-			<binding>
-				<command>dialog-close</command>
-			</binding>
-		</button>
-	</group>
-
+    <name>lights-dlg</name>
+    <layout>vbox</layout>
+    <text>
+        <label>Vessel Light Controller</label>
+    </text>
+    <hrule />
+    <group>
+        <layout>vbox</layout>
+        <checkbox>
+            <label>Flighdeck</label>
+            <property>controls/lighting/landzone</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+        <checkbox>
+            <label>Monitor</label>
+            <property>controls/lighting/monitor-light</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+        <checkbox>
+            <label>Deck</label>
+            <property>controls/lighting/decklight</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <live>true</live>
+        </checkbox>
+        <text>
+            <label>Searcher</label>
+        </text>
+        <slider>
+            <width>200</width>
+            <property>sim/monitor/brightness</property>
+            <step>0.05</step>
+            <min>0</min>
+            <max>5</max>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+        </slider>
+        <text>
+            <label>Deck dimmer</label>
+        </text>
+        <slider>
+            <width>200</width>
+            <property>/controls/lighting/panel-norm</property>
+            <step>0.02</step>
+            <min>0</min>
+            <max>1</max>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+        </slider>
+        <hrule />
+    </group>
+    <hrule />
+    <group>
+        <layout>vbox</layout>
+        <button>
+            <legend>Close</legend>
+            <default>true</default>
+            <key>Esc</key>
+            <padding>10</padding>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+            <binding>
+                <command>dialog-close</command>
+            </binding>
+        </button>
+    </group>
 </PropertyList>
