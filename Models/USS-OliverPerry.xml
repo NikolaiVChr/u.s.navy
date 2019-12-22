@@ -468,7 +468,7 @@ menu-> US naval.....-> AI -> Mary ondeck checkbox)###
     <model>
         <path>Models/Aircraft/H-60.xml</path>
         <condition>
-            <property>controls/Mary-ondeck</property>
+            <property>sim/multiplay/generic/int[3]</property>
         </condition>
         <offsets>
             <x-m>55</x-m>

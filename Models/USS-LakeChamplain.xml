@@ -511,6 +511,19 @@
             <property>sim/multiplay/generic/int[2]</property>
         </condition>
     </animation>
+    <model>
+        <path>Models/Aircraft/H-60.xml</path>
+        <condition>
+            <property>sim/multiplay/generic/int[3]</property>
+        </condition>
+        <offsets>
+            <x-m>62</x-m>
+            <y-m>0</y-m>
+            <z-m>14.5</z-m>
+            <pitch-deg>2</pitch-deg>
+            <heading-deg>9</heading-deg>
+        </offsets>
+    </model>
     <!--******************* LOD *****************-->
     <animation>
         <type>range</type>

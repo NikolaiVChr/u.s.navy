@@ -351,6 +351,7 @@ lights.open();</script>
                 <int n="0" alias="/sim/crashed" />
                 <int n="1" alias="/controls/lighting/landzone" />
                 <int n="2" alias="/controls/lighting/doors" />
+                <int n="3" alias="/controls/Mary-ondeck" />
             </generic>
         </multiplay>
     </sim>
@@ -374,6 +375,7 @@ lights.open();</script>
         </engine>
     </engines>
     <controls>
+        <Mary-ondeck type="bool">false</Mary-ondeck>
         <flight>
             <aileron0 type="double">0.0</aileron0>
             <aileron-filtered type="double">0.0</aileron-filtered>
