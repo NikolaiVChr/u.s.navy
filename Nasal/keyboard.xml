@@ -11,6 +11,26 @@
             <property>controls/lighting/coord-light</property>
         </binding>
     </key>
+    <key n="114">
+        <name>r</name>
+        <desc>reverse</desc>
+        <binding>
+            <command>property-assign</command>
+            <property>/controls/engines/engine[0]/throttle</property>
+            <value>0.26</value>
+            <condition>
+                <greater-than>
+                    <property>/controls/engines/engine[0]/throttle</property>
+                    <value>0.008</value>
+                </greater-than>
+            </condition>
+        </binding>
+        <binding>
+            <command>property-assign</command>
+            <property>/controls/rev</property>
+            <value>-1</value>
+        </binding>
+    </key>
     <key n="115">
         <name>s</name>
         <desc>slow</desc>
@@ -24,6 +44,11 @@
                     <value>0.008</value>
                 </greater-than>
             </condition>
+        </binding>
+        <binding>
+            <command>property-assign</command>
+            <property>/controls/rev</property>
+            <value>1</value>
         </binding>
     </key>
     <key n="72">
@@ -40,6 +65,11 @@
                 </greater-than>
             </condition>
         </binding>
+        <binding>
+            <command>property-assign</command>
+            <property>/controls/rev</property>
+            <value>1</value>
+        </binding>
     </key>
     <key n="67">
         <name>C</name>
@@ -54,6 +84,11 @@
                     <value>0.008</value>
                 </greater-than>
             </condition>
+        </binding>
+        <binding>
+            <command>property-assign</command>
+            <property>/controls/rev</property>
+            <value>1</value>
         </binding>
     </key>
     <key n="102">
@@ -70,6 +105,11 @@
                 </greater-than>
             </condition>
         </binding>
+        <binding>
+            <command>property-assign</command>
+            <property>/controls/rev</property>
+            <value>1</value>
+        </binding>
     </key>
     <key n="127">
         <name>del</name>
@@ -78,6 +118,11 @@
             <command>property-assign</command>
             <property>/controls/engines/engine[0]/throttle</property>
             <value>0.009</value>
+        </binding>
+        <binding>
+            <command>property-assign</command>
+            <property>/controls/rev</property>
+            <value>1</value>
         </binding>
     </key>
     <key n="32">

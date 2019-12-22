@@ -91,10 +91,12 @@ var update_orientation = func {
 
 var update_throttle = func {
 		# just a simple throttle for now
+		var rev = getprop("controls/rev");
+		if (rev == nil) rev = 1;
 		var throttle = getprop ("controls/flight/throttle-filtered") * getprop(max_speed);
-				throttle =throttle * getprop("sim/speed-up");
+		throttle =throttle * getprop("sim/speed-up");
 
-		setprop ("controls/flight/target-spd", throttle);
+		setprop ("controls/flight/target-spd", throttle*rev);
 }
 
 var check_ground = func {
