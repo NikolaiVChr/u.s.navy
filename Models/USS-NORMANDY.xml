@@ -528,6 +528,35 @@
             <heading-deg>9</heading-deg>
         </offsets>
     </model>
+    <model>
+    	<name>heli</name>
+        <path>Models/Aircraft/H-60.xml</path>
+        <condition>
+            <property>sim/multiplay/generic/int[5]</property>
+        </condition>
+        <offsets>
+            <x-m>200</x-m>
+            <y-m>0</y-m>
+            <z-m>40</z-m>
+            <heading-deg>0</heading-deg>
+        </offsets>
+    </model>
+    <animation>
+        <type>rotate</type>
+        <object-name>heli</object-name>
+        <property>sim/multiplay/generic/float[3]</property>
+        <factor>0.75</factor>
+        <center>
+            <x-m>200</x-m>
+            <y-m>0</y-m>
+            <z-m>40</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>-1</y>
+            <z>0</z>
+        </axis>
+    </animation>
     <!--******************* LOD *****************-->
     <animation>
         <type>range</type>
