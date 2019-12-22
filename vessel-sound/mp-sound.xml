@@ -127,5 +127,20 @@
             <reference-dist>25</reference-dist>
             <max-dist>250</max-dist>
         </heli>
+        <heli>
+            <name>mary2</name>
+            <mode>looped</mode>
+            <path>Aircraft/u.s.navy/vessel-sound/mary.wav</path>
+            <condition>
+                <property>sim/multiplay/generic/int[5]</property>
+            </condition>
+            <position>
+                <x> 200 </x>
+                <y>  0 </y>
+                <z> 40 </z>
+            </position>
+            <reference-dist>25</reference-dist>
+            <max-dist>250</max-dist>
+        </heli>
     </fx>
 </PropertyList>
