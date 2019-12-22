@@ -112,93 +112,12 @@
                 <max>2.0</max>
             </volume>-->
         </horn>
-        <sea>
-            <name>seagull</name>
-            <mode>looped</mode>
-            <type>avionics</type>
-            <path>Aircraft/u.s.navy/vessel-sound/newwave.wav</path>
-            <condition>
-                <less-than>
-                    <property>sim/multiplay/generic/float[4]</property>
-                    <value>12</value>
-                </less-than>
-            </condition>
-            <volume>
-                <factor>0.28</factor>
-            </volume>
-        </sea>
-        <rain>
-            <name>rain</name>
-            <mode>looped</mode>
-            <path>Aircraft/u.s.navy/vessel-sound/rain.wav</path>
-            <type>avionics</type>
-            <condition>
-                <greater-than>
-                    <property>/environment/rain-norm</property>
-                    <value>0</value>
-                </greater-than>
-            </condition>
-            <volume>
-                <property>/environment/rain-norm</property>
-            </volume>
-        </rain>
-        <thunder1>
-            <name>thunder1</name>
-            <mode>once</mode>
-            <path>Aircraft/u.s.navy/vessel-sound/thunder1.wav</path>
-            <type>avionics</type>
-            <property>sound/thunder1</property>
-            <pitch>
-                <property>sound/dist-thunder1</property>
-                <factor>2</factor>
-                <offset>0.50</offset>
-                <min>1.00</min>
-                <max>2.00</max>
-            </pitch>
-            <volume>
-                <property>sound/dist-thunder1</property>
-            </volume>
-        </thunder1>
-        <thunder2>
-            <name>thunder2</name>
-            <mode>once</mode>
-            <path>Aircraft/u.s.navy/vessel-sound/thunder2.wav</path>
-            <type>avionics</type>
-            <property>sound/thunder2</property>
-            <pitch>
-                <property>sound/dist-thunder2</property>
-                <factor>2</factor>
-                <offset>0.50</offset>
-                <min>1.00</min>
-                <max>2.00</max>
-            </pitch>
-            <volume>
-                <property>sound/dist-thunder2</property>
-            </volume>
-        </thunder2>
-        <thunder3>
-            <name>thunder3</name>
-            <mode>once</mode>
-            <path>Aircraft/u.s.navy/vessel-sound/thunder3.wav</path>
-            <type>avionics</type>
-            <property>sound/thunder3</property>
-            <pitch>
-                <property>sound/dist-thunder3</property>
-                <factor>1</factor>
-                <offset>0.50</offset>
-                <min>1.00</min>
-                <max>2.00</max>
-            </pitch>
-            <volume>
-                <property>sound/dist-thunder3</property>
-            </volume>
-        </thunder3>
         <heli>
             <name>mary</name>
             <mode>looped</mode>
             <path>Aircraft/u.s.navy/vessel-sound/mary.wav</path>
             <condition>
-                <property>controls/Mary-ondeck</property>
+                <property>sim/multiplay/generic/int[3]</property>
             </condition>
             <position>
                 <x> 63.4466 </x>
