@@ -357,6 +357,7 @@ lights.open();</script>
                 <int n="4" alias="/sim/horn" />
             </generic>
         </multiplay>
+        <horn type="bool">false</horn>
     </sim>
     <!--<autopilot>
  <config>
