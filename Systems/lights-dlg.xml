@@ -22,6 +22,15 @@
 			</binding>
 			<live>true</live>
 		</checkbox>
+		
+		<checkbox>
+			<label>Deck doors</label>
+			<property>controls/lighting/doors</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
 
 		<checkbox>
 			<label>Monitor</label>

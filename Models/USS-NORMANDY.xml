@@ -504,6 +504,14 @@
 		<object-name>glass-flight-deck</object-name>-->
 		<!--<object-name>nets-transparency</object-name>-->
 	</effect>
+	<animation>
+        <type>select</type>
+        <object-name>hangar-door-L</object-name>
+		<object-name>hangar-door-R</object-name>
+		<condition>
+            <property>sim/multiplay/generic/int[2]</property>
+        </condition>
+    </animation>
     <!--******************* LOD *****************-->
     <animation>
         <type>range</type>

@@ -347,9 +347,10 @@ lights.open();</script>
                 <float n="1" alias="/velocities/groundspeed-kt" />
                 <float n="2" alias="/gear/gear[0]/compression-norm" />
                 <float n="3" alias="/velocities/airspeed-kt" />
-                <int n="1" alias="/controls/lighting/landzone" />
                 <float n="4" alias="/controls/lighting/panel-norm" />
                 <int n="0" alias="/sim/crashed" />
+                <int n="1" alias="/controls/lighting/landzone" />
+                <int n="2" alias="/controls/lighting/doors" />
             </generic>
         </multiplay>
     </sim>
@@ -372,6 +373,7 @@ lights.open();</script>
         </engines>
         <lighting>
             <landzone type="bool">false</landzone>
+            <doors type="bool">true</doors>
             <panel-norm type="double">1</panel-norm>
         </lighting>
     </controls>
