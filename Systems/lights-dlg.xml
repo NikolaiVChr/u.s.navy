@@ -33,7 +33,7 @@
             <live>true</live>
         </checkbox>
         <text>
-            <label>Searcher</label>
+            <label>Searcher (Perry)</label>
         </text>
         <slider>
             <width>200</width>
@@ -46,7 +46,7 @@
             </binding>
         </slider>
         <text>
-            <label>Deck dimmer</label>
+            <label>Deck brightness</label>
         </text>
         <slider>
             <width>200</width>

@@ -56,41 +56,6 @@
             </binding>
             <live>true</live>
         </checkbox>
-        <text>
-            <label>Searcher (Perry)</label>
-        </text>
-        <slider>
-            <width>200</width>
-            <property>controls/lighting/wtf</property>
-            <step>0.05</step>
-            <min>1</min>
-            <max>3</max>
-            <binding>
-                <command>dialog-apply</command>
-            </binding>
-        </slider>
-        <text>
-            <label>Deck brightness</label>
-        </text>
-        <slider>
-            <width>200</width>
-            <property>controls/lighting/wtf</property>
-            <step>0.05</step>
-            <min>0</min>
-            <max>1</max>
-            <binding>
-                <command>dialog-apply</command>
-            </binding>
-        </slider>
-        <!--<hrule />
-        <checkbox>
-            <label>Master</label>
-            <property>/controls/engines/engine[0]/throttle</property>
-            <binding>
-                <command>dialog-apply</command>
-            </binding>
-            <live>true</live>
-        </checkbox>-->
     </group>
     <hrule />
     <group>
