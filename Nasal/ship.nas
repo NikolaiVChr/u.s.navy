@@ -52,8 +52,10 @@ var update_AI_position = func {
 		var cspeed = getprop("velocities/airspeed-kt");
 		if (cspeed<tspeed) {
 			cspeed += looptime;
-		} else {
+			if (cspeed>tspeed) cspeed=tspeed;
+		} elsif (cspeed>tspeed) {
 			cspeed -= looptime;
+			if (cspeed<tspeed) cspeed=tspeed;
 		}
 		setprop("velocities/airspeed-kt",cspeed);
 		setprop("velocities/groundspeed-kt",cspeed);
@@ -88,13 +90,15 @@ var update_controls = func {
 
 var update_orientation = func {
 		#adjust roll
-		var roll = getprop(roll_factor) * getprop (speed)* getprop (speed) * getprop (aileron)*getprop(rudder_adv);
+		var wind = getprop("environment/wind-speed-kt");
+		var wind_heeve = wind*0.0125*math.sin(getprop("sim/time/elapsed-sec"))/(getprop (speed)+1);
+		var roll = wind_heeve + getprop(roll_factor) * getprop (speed)* getprop (speed) * getprop (aileron)*getprop(rudder_adv);
 		#print (roll);
 		setprop (roll_deg, roll);
 		# adjust climb while planing
 
 		# adjust pitch
-		var pitchup = getprop (pitch_factor)* getprop (speed) + (getprop ("sim/SDM/environment/waveloop-norm")*0.5);
+		var pitchup = getprop (pitch_factor)* getprop (speed) + getprop ("sim/SDM/environment/waveloop-norm")*0.5;
 		setprop (pitch, pitchup);
 }
 
@@ -149,7 +153,7 @@ var update_waveloop = func () {
 		#print (wave_norm);
 		var next = wave_count + wave_amp;
 		setprop ("sim/SDM/environment/waveloop-count", next);
-		setprop ("sim/SDM/environment/waveloop-norm",math.sin( next )*wind*0.2);
+		setprop ("sim/SDM/environment/waveloop-norm",math.sin( next )+math.sin( next )*wind*0.01);
 }
 
 setlistener("/sim/signals/fdm-initialized",init);
