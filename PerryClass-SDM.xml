@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
     <environment>
-        <wave-amp type="float">0.03</wave-amp>
+        <wave-amp type="float">0.018</wave-amp>
         <waveloop-count type="float">0</waveloop-count>
         <waveloop-norm type="float">0</waveloop-norm>
     </environment>
