@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList include="base.xml">
+    <sim>
+        <author>Alexis Bory (3D), Detlef Faber (FDM), T. Henkel (Combined), Nikolai V. Chr. (Misc. fixes)</author>
+        <long-description>Ticonderoga Class or CG-57 is a missile-cruiser ship type from the 1980'ties.</long-description>
+        <rating>
+            <FDM type="int">2</FDM>
+            <systems type="int">1</systems>
+            <cockpit type="int">0</cockpit>
+            <model type="int">5</model>
+        </rating>
+        <status>experimental</status>
+        <variant-of>PerryClass</variant-of>
+        <sound>
+            <path>Aircraft/u.s.navy/vessel-sound/vessel-sound.xml</path>
+        </sound>
+        <SDM include="SDM-Champlain.xml" />
+        <model>
+            <path>Aircraft/u.s.navy/Models/USS-LakeChamplain.xml</path>
+        </model>
+        <view n="bridge-star ##!unused">
+            <internal archive="y">true</internal>
+            <config>
+                <x-offset-m archive="y" type="double">4.88</x-offset-m>
+                <y-offset-m archive="y" type="double">15.05</y-offset-m>
+                <z-offset-m archive="y" type="double">-25.3</z-offset-m>
+                <pitch-offset-deg>-7.5</pitch-offset-deg>
+            </config>
+        </view>
+        <!--"bridge-port"-->
+        <view n="0">
+            <config>
+                <x-offset-m archive="y" type="double">-6.7</x-offset-m>
+                <y-offset-m archive="y" type="double">21.62</y-offset-m>
+                <z-offset-m archive="y" type="double">-8.7</z-offset-m>
+                <pitch-offset-deg>-0.5</pitch-offset-deg>
+            </config>
+        </view>
+        <!--"bridge-star"-->
+        <view n="1">
+            <type>lookfrom</type>
+            <config>
+                <internal type="bool">true</internal>
+                <from-model type="bool">true</from-model>
+                <x-offset-m archive="y" type="double">6.7</x-offset-m>
+                <y-offset-m archive="y" type="double">21.62</y-offset-m>
+                <z-offset-m archive="y" type="double">-8.7</z-offset-m>
+                <pitch-offset-deg>-0.5</pitch-offset-deg>
+            </config>
+        </view>
+        <chase-distance-m type="double">280.0</chase-distance-m>
+        <view n="2">
+            <config>
+                <target-z-offset-m archive="y" type="double">-20.5</target-z-offset-m>
+                <target-y-offset-m archive="y" type="double">20</target-y-offset-m>
+                <pitch-offset-deg>-15.0</pitch-offset-deg>
+            </config>
+        </view>
+        <view n="101">
+            <name>Fly with View</name>
+            <type>lookfrom</type>
+            <config>
+                <internal type="bool">false</internal>
+                <from-model type="bool">false</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <eye-lat-deg-path>/position/latitude-deg</eye-lat-deg-path>
+                <eye-lon-deg-path>/position/longitude-deg</eye-lon-deg-path>
+                <eye-alt-ft-path>/position/altitude-ft</eye-alt-ft-path>
+                <eye-heading-deg-path>/orientation/heading-deg</eye-heading-deg-path>
+                <eye-pitch-deg-path>/orientation/pitch-deg</eye-pitch-deg-path>
+                <eye-roll-deg-path>/orientation/roll-deg</eye-roll-deg-path>
+                <at-model type="bool">false</at-model>
+                <at-model-idx type="int">0</at-model-idx>
+                <ground-level-nearplane-m type="double">0.1f</ground-level-nearplane-m>
+                <heading-offset-deg>0</heading-offset-deg>
+                <x-offset-m>27.074</x-offset-m>
+                <y-offset-m>12</y-offset-m>
+                <z-offset-m>17.67</z-offset-m>
+                <pitch-offset-deg>10</pitch-offset-deg>
+                <default-field-of-view-deg>100</default-field-of-view-deg>
+            </config>
+        </view>
+        <view n="102">
+            <name>flip-view</name>
+            <enabled type="bool">true</enabled>
+            <type>lookat</type>
+            <config>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <eye-lat-deg-path>/position/latitude-deg</eye-lat-deg-path>
+                <eye-lon-deg-path>/position/longitude-deg</eye-lon-deg-path>
+                <eye-alt-ft-path>/position/altitude-ft</eye-alt-ft-path>
+                <eye-heading-deg-path>/orientation/heading-deg</eye-heading-deg-path>
+                <eye-pitch-deg-path>0</eye-pitch-deg-path>
+                <eye-roll-deg-path>0</eye-roll-deg-path>
+                <at-model type="bool">true</at-model>
+                <at-model-idx type="int">0</at-model-idx>
+                <at-model-heading-damping type="double">0.0</at-model-heading-damping>
+                <target-z-offset-m type="double">0</target-z-offset-m>
+                <ground-level-neardeck-m type="double">0.5</ground-level-neardeck-m>
+                <x-offset-m>0</x-offset-m>
+                <!-- right -->
+                <y-offset-m>50</y-offset-m>
+                <!-- up -->
+                <z-offset-m alias="../../chase-distance-m" />
+                <pitch-offset-deg>5</pitch-offset-deg>
+                <default-field-of-view-deg>120</default-field-of-view-deg>
+            </config>
+        </view>
+        <view n="103">
+            <name>stern</name>
+            <type>lookfrom</type>
+            <config>
+                <internal type="bool">false</internal>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <x-offset-m archive="y" type="double">8.0</x-offset-m>
+                <y-offset-m archive="y" type="double">9.88</y-offset-m>
+                <z-offset-m archive="y" type="double">77.25</z-offset-m>
+                <heading-offset-deg>342</heading-offset-deg>
+                <pitch-offset-deg>-1.5</pitch-offset-deg>
+            </config>
+        </view>
+        <view n="104">
+            <name>Cam1</name>
+            <type>lookfrom</type>
+            <config>
+                <internal type="bool">true</internal>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <x-offset-m archive="y" type="double">2.5</x-offset-m>
+                <y-offset-m archive="y" type="double">22.88</y-offset-m>
+                <z-offset-m archive="y" type="double">1.25</z-offset-m>
+                <heading-offset-deg>180</heading-offset-deg>
+                <pitch-offset-deg>-12.5</pitch-offset-deg>
+            </config>
+        </view>
+        <view n="105">
+            <name>Hangar</name>
+            <type>lookfrom</type>
+            <config>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <x-offset-m archive="y" type="double">-5</x-offset-m>
+                <y-offset-m archive="y" type="double">13.55</y-offset-m>
+                <z-offset-m archive="y" type="double">39.42</z-offset-m>
+                <pitch-offset-deg>5</pitch-offset-deg>
+                <heading-offset-deg>180</heading-offset-deg>
+            </config>
+        </view>
+        <view n="106">
+            <name>mid</name>
+            <type>lookfrom</type>
+            <config>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <x-offset-m archive="y" type="double">-6.8</x-offset-m>
+                <y-offset-m archive="y" type="double">24.25</y-offset-m>
+                <z-offset-m archive="y" type="double">48.42</z-offset-m>
+                <pitch-offset-deg>-15</pitch-offset-deg>
+                <heading-offset-deg>180</heading-offset-deg>
+            </config>
+        </view>
+        <view n="108">
+            <name>Bow</name>
+            <type>lookfrom</type>
+            <config>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <x-offset-m archive="y" type="double">1.6</x-offset-m>
+                <y-offset-m archive="y" type="double">12.74</y-offset-m>
+                <z-offset-m archive="y" type="double">-55.9</z-offset-m>
+                <pitch-offset-deg>0.5</pitch-offset-deg>
+            </config>
+        </view>
+        <view n="109">
+            <name>Cam2</name>
+            <type>lookfrom</type>
+            <config>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">0</from-model-idx>
+                <x-offset-m archive="y" type="double">-2</x-offset-m>
+                <y-offset-m archive="y" type="double">29.58</y-offset-m>
+                <z-offset-m archive="y" type="double">-5.5</z-offset-m>
+                <pitch-offset-deg>-15</pitch-offset-deg>
+            </config>
+        </view>
+        <!-- i tried to make this view hold the pitch to zero, for a better horizon observation, but ...nope
+       also i dont know for what all the parameters are, its from the Vinson, and when u are able to 
+     configure that (observer cam / target cam) feel free to contact me! Cpt Goosnen @ FG forums-->
+        <view n="107">
+            <name>mast</name>
+            <type>lookfrom</type>
+            <config>
+                <from-model type="bool">true</from-model>
+                <from-model-idx type="int">1</from-model-idx>
+                <eye-lat-deg-path>/position/latitude-deg</eye-lat-deg-path>
+                <eye-lon-deg-path>/position/longitude-deg</eye-lon-deg-path>
+                <eye-alt-ft-path>/position/altitude-ft</eye-alt-ft-path>
+                <eye-heading-deg-path>/orientation/heading-deg</eye-heading-deg-path>
+                <eye-pitch-deg-path>0</eye-pitch-deg-path>
+                <eye-roll-deg-path>0</eye-roll-deg-path>
+                <at-model type="bool">true</at-model>
+                <at-model-idx type="int">0</at-model-idx>
+                <at-model-heading-damping type="double">0.0</at-model-heading-damping>
+                <x-offset-m archive="y" type="double">-0</x-offset-m>
+                <y-offset-m archive="y" type="double">44.58</y-offset-m>
+                <z-offset-m archive="y" type="double">23.32</z-offset-m>
+                <pitch-offset-deg>-0</pitch-offset-deg>
+            </config>
+        </view>
+        <weight n="0">
+            <name>Crew</name>
+            <weight-lb>36000</weight-lb>
+            <max-lb>400000</max-lb>
+            <min-lb>180</min-lb>
+        </weight>
+        <weight n="1">
+            <name>Pax/Baggage</name>
+            <weight-lb>18980</weight-lb>
+            <max-lb>400000</max-lb>
+            <min-lb>0</min-lb>
+        </weight>
+        <multiplay>
+            <generic>
+                <float n="0" alias="/orientation/roll-deg" />
+                <float n="1" alias="/velocities/groundspeed-kt" />
+                <float n="2" alias="/gear/gear[0]/compression-norm" />
+                <float n="3" alias="/velocities/airspeed-kt" />
+                <float n="4" alias="/controls/lighting/panel-norm" />
+                <float n="5" alias="/controls/engines/engine/throttle" />
+                <float n="6" alias="/engines/engine/throttle" />
+                <int n="0" alias="/sim/crashed" />
+                <int n="1" alias="/controls/lighting/landzone" />
+                <int n="2" alias="/controls/doors" />
+                <int n="3" alias="/controls/Mary-ondeck" />
+                <int n="4" alias="/sim/horn" />
+                <int n="5" alias="/controls/Mary" />
+            </generic>
+        </multiplay>
+        <horn type="bool">false</horn>
+    </sim>
+    <!--<autopilot>
+ <config>
+ min-climb-speed-kt type="float">70.0</min-climb-speed-kt>
+ <best-climb-speed-kt type="float">75.0</best-climb-speed-kt>
+ <target-climb-rate-fpm type="float">500.0</target-climb-rate-fpm>
+ <target-descent-rate-fpm type="float">1000.0</target-descent-rate-fpm>
+ <elevator-adj-factor type="float">4000.0</elevator-adj-factor>
+ <integral-contribution type="float">0.01</integral-contribution>
+ <zero-pitch-throttle type="float">0.45</zero-pitch-throttle>
+ <zero-pitch-trim-full-throttle type="float">0.14</zero-pitch-trim-full-throttle
+  <rudder-adj-factor type="float">0</rudder-adj-factor>
+  <throttle-adj-factor type="float">0.0</throttle-adj-factor>
+  </config>
+ </autopilot>-->    
+</PropertyList>

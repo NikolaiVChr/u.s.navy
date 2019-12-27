@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-
-
-
-
-
 <PropertyList>
-
-
 
 	<environment>
 		<wave-amp type="float">0.018</wave-amp>
@@ -23,7 +16,6 @@
 	<max-speed-kt type="float">34.9</max-speed-kt>
 	<max-reverser-kt type="float">12</max-reverser-kt>
 	<max-throttle type ="float">0.0000000000000988</max-throttle>		
-		
 	<max-rudder-deflection-deg type="float">38.4</max-rudder-deflection-deg>
 	<max-rudder-advance type ="float">0.08</max-rudder-advance>
 	<rudder-damp type="float">0.1</rudder-damp>
@@ -34,11 +26,8 @@
 	<pitch-factor type="float">0.02</pitch-factor>
 	<!--<weight type="float">90</weight>-->
 
-
 	<weight x="4.2" y="0" z="0" mass-prop="/sim/weight[0]/weight-lb"/>
-	<weight x="0.5" y="0" z="0" mass-prop="/sim/weight[1]/weight-lb"/>
-
-		
+	<weight x="0.5" y="0" z="0" mass-prop="/sim/weight[1]/weight-lb"/>		
 </PropertyList>
 
 

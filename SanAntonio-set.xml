@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PropertyList>
+<PropertyList include="base.xml">
     <sim>
         <description>USS San Antonio</description>
         <author>H.Schulz (3D), Vivian Meazza (3D), Detlef Faber (FDM base), T. Henkel (Combined), Nikolai V. Chr. (Misc. fixes)</author>
-        <minimum-fg-version>2018.3</minimum-fg-version>
         <long-description>San Antonio class is a amphibious transport dock ship type from the 2000's.</long-description>
         <rating>
             <FDM type="int">2</FDM>
@@ -13,9 +12,6 @@
         </rating>
         <status>experimental</status>
         <variant-of>PerryClass</variant-of>
-        <presets>
-            <onground>true</onground>
-        </presets>
         <previews>
             <preview>
                 <type>exterior</type>
@@ -31,10 +27,7 @@
         <sound>
             <path>Aircraft/u.s.navy/vessel-sound/Anton-sound.xml</path>
         </sound>
-        <flight-model>null</flight-model>
-        <virtual-cockpit archive="y">true</virtual-cockpit>
-        <allow-toggle-cockpit archive="y">true</allow-toggle-cockpit>
-        <SDM include="SanAntonio-SDM.xml" />
+        <SDM include="SDM-SanAntonio.xml" />
         <model>
             <path>Aircraft/u.s.navy/Models/USS-SanAntonio.xml</path>
             <solid>Cube</solid>
@@ -47,11 +40,6 @@
             <solid>ShapeIndexedFaceS</solid>
             <solid>ShapeIndexedFaceS.002</solid>
             <solid>ShapeIndexedFaceSet</solid>
-            <crew>
-                <pilot>
-                    <visible type="int">1</visible>
-                </pilot>
-            </crew>
         </model>
         <view n="bridge-star-##!unused">
             <internal archive="y">true</internal>
@@ -178,98 +166,6 @@
                 <default-field-of-view-deg>100</default-field-of-view-deg>
             </config>
         </view>
-        <hud>
-            <enable3d>false</enable3d>
-        </hud>
-        <help>
-            <title>Ahoy Sailor, Sir!!</title>
-            <key>
-                <name>s</name>
-                <desc>slow forward</desc>
-            </key>
-            <key>
-                <name>H</name>
-                <desc>half ahead</desc>
-            </key>
-            <key>
-                <name>C</name>
-                <desc>Cruise</desc>
-            </key>
-            <key>
-                <name>f</name>
-                <desc>full ahead</desc>
-            </key>
-            <key>
-                <name>del</name>
-                <desc>full stop</desc>
-            </key>
-            <key>
-                <name>Space</name>
-                <desc>Engine on/off</desc>
-            </key>
-            <key>
-                <name>j</name>
-                <desc>Horn</desc>
-            </key>
-            <line />
-            <line>Note the Turbine needs her time</line>
-            <line>to become full power,</line>
-            <line />
-            <line>Steering is some getting used to</line>
-            <line>no autopilot untill now</line>
-            <line />
-            <line>-------------------------</line>
-            <line />
-            <line />
-            <line>speed control</line>
-            <line>"s/H/C/f"</line>
-            <line />
-            <line />
-            <line>ur bridge</line>
-        </help>
-        <!--
-  pls dont wonder about what ive done here, im totaly new on this, ! evrything is experimental 
-  (excited for all tips ;) 
-
-  
--->
-        <menubar>
-            <default>
-                <menu n="100">
-                    <label>US Naval Research HQ</label>
-                    <enabled type="bool">true</enabled>
-                    <item>
-                        <label>Tugboat</label>
-                        <name>Tugboat</name>
-                        <binding>
-                            <command>dialog-show</command>
-                            <dialog-name>pushback</dialog-name>
-                        </binding>
-                    </item>
-                    <item>
-                        <label>Lights</label>
-                        <binding>
-                            <command>nasal</command>
-                            <script>var lights = gui.Dialog.new("sim/gui/dialogs/lights/dialog", "Aircraft/u.s.navy/Systems/lights-dlg.xml");
-lights.open();</script>
-                        </binding>
-                    </item>
-                    <item>
-                        <label>AI</label>
-                        <binding>
-                            <command>nasal</command>
-                            <script>var lights = gui.Dialog.new("sim/gui/dialogs/ai/dialog", "Aircraft/u.s.navy/Systems/AI.xml");
-lights.open();</script>
-                        </binding>
-                    </item>
-                </menu>
-            </default>
-        </menubar>
-        <!--<ai>
-      <enabled type="bool">true</enabled>
-      <scenarios-enabled type="bool" userarchive="y">true</scenarios-enabled>
-      <scenario>LPD17_AI_Part</scenario>
-      </ai>-->
         <weight n="0">
             <name>Crew</name>
             <weight-lb>36000</weight-lb>
@@ -282,20 +178,6 @@ lights.open();</script>
             <max-lb>400000</max-lb>
             <min-lb>0</min-lb>
         </weight>
-        <systems>
-            <autopilot>
-                <path>Aircraft/u.s.navy/Systems/pt-boat-filters.xml</path>
-            </autopilot>
-        </systems>
-        <multiplay>
-            <generic>
-                <float n="0" alias="/orientation/roll-deg" />
-                <float n="1" alias="/velocities/groundspeed-kt" />
-                <float n="2" alias="/gear/gear[0]/compression-norm" />
-                <float n="3" alias="/velocities/airspeed-kt" />
-                <int n="0" alias="/sim/crashed" />
-            </generic>
-        </multiplay>
     </sim>
     <!--<autopilot>
  <config>
@@ -311,37 +193,4 @@ lights.open();</script>
   <throttle-adj-factor type="float">0.0</throttle-adj-factor>
   </config>
  </autopilot>-->
-    <engines>
-        <engine>
-            <rpm type="double">700</rpm>
-        </engine>
-    </engines>
-    <controls>
-        <flight>
-            <aileron0 type="double">0.0</aileron0>
-            <aileron-filtered type="double">0.0</aileron-filtered>
-            <throttle-filtered type="double">0.0</throttle-filtered>
-        </flight>
-        <engines>
-            <engine n="0">
-                <magnetos>0</magnetos>
-                <throttle>0.009</throttle>
-            </engine>
-        </engines>
-        <lighting>
-            <panel-norm>1</panel-norm>
-        </lighting>
-    </controls>
-    <input>
-        <keyboard include="Nasal/keyboard.xml" />
-        <!--mouse include="Nasal/ship-mice.xml"/-->
-    </input>
-    <nasal>
-        <ship>
-            <file>Aircraft/u.s.navy/Nasal/ship.nas</file>
-        </ship>
-        <!--autopilot>
-      <file>Aircraft/u.s.navy/Nasal/autopilot.nas</file>
-    </autopilot-->
-    </nasal>
 </PropertyList>
