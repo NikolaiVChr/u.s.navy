@@ -32,7 +32,7 @@
             </binding>
             <live>true</live>
         </checkbox>
-        <checkbox>
+        <!--checkbox>
             <label>BattleGroup</label>
             <property>controls/Mary-X</property>
             <binding>
@@ -55,7 +55,7 @@
                 <command>dialog-apply</command>
             </binding>
             <live>true</live>
-        </checkbox>
+        </checkbox-->
     </group>
     <hrule />
     <group>
