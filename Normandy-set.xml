@@ -2,6 +2,7 @@
 <PropertyList include="base-champlain.xml">
     <sim>
         <description>USS Normandy</description>
+        <variant-of>Champlain</variant-of>
         <previews>
             <preview>
                 <type>exterior</type>

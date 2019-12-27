@@ -4,6 +4,7 @@
         <description>USS San Antonio</description>
         <author>H.Schulz (3D), Vivian Meazza (3D), Detlef Faber (FDM base), T. Henkel (Combined), Nikolai V. Chr. (Misc. fixes)</author>
         <long-description>San Antonio class is a amphibious transport dock ship type from the 2000's.</long-description>
+        <variant-of>Champlain</variant-of>
         <rating>
             <FDM type="int">2</FDM>
             <systems type="int">1</systems>
@@ -27,7 +28,7 @@
         <sound>
             <path>Aircraft/u.s.navy/vessel-sound/Anton-sound.xml</path>
         </sound>
-        <SDM include="SDM-SanAntonio.xml" />
+        <SDM include="SDM-SanAntonio.xml"/>
         <model>
             <path>Aircraft/u.s.navy/Models/USS-SanAntonio.xml</path>
             <solid>Cube</solid>

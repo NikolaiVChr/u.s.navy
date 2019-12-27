@@ -4,6 +4,7 @@
         <description>USS Oliver Perry</description>
         <author>Alexis Bory (3D), Detlef Faber (FDM), T. Henkel (Combined), Nikolai V. Chr. (Misc. fixes)</author>
         <long-description>Perry Class or FFG-7 is a general purpose escort ship type from mid 1970'ties.</long-description>
+        <variant-of>Champlain</variant-of>
         <rating>
             <FDM type="int">2</FDM>
             <systems type="int">1</systems>

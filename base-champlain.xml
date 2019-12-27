@@ -10,7 +10,6 @@
             <model type="int">5</model>
         </rating>
         <status>experimental</status>
-        <variant-of>PerryClass</variant-of>
         <sound>
             <path>Aircraft/u.s.navy/vessel-sound/vessel-sound.xml</path>
         </sound>
