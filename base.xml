@@ -22,6 +22,9 @@
                 <position-norm type="double">0</position-norm>
             </pushback>      
         </model>
+        <sound>
+            <path>Aircraft/u.s.navy/vessel-sound/vessel-sound.xml</path>
+        </sound>
         <hud>
             <enable3d>false</enable3d>
         </hud>

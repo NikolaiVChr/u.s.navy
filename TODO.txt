@@ -2,3 +2,4 @@ Weapons
 Companions
 Tune roll and pitch
 Autopilot and D. Fabers FDM
+Perry and Antonio deck lights

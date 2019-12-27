@@ -24,9 +24,6 @@
                 <path>thumbs/perry.png</path>
             </preview>
         </previews>
-        <sound>
-            <path>Aircraft/u.s.navy/vessel-sound/vessel-sound.xml</path>
-        </sound>
         <SDM include="SDM-PerryClass.xml" />
         <model>
             <path>Aircraft/u.s.navy/Models/USS-OliverPerry.xml</path>

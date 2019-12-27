@@ -25,9 +25,6 @@
                 <path>thumbs/ant.png</path>
             </preview>
         </previews>
-        <sound>
-            <path>Aircraft/u.s.navy/vessel-sound/Anton-sound.xml</path>
-        </sound>
         <SDM include="SDM-SanAntonio.xml"/>
         <model>
             <path>Aircraft/u.s.navy/Models/USS-SanAntonio.xml</path>
