@@ -168,6 +168,19 @@
         </offsets>
     </model>
     <model>
+        <path>Models/Aircraft/H-60.xml</path>
+        <condition>
+            <property>sim/multiplay/generic/int[3]</property>
+        </condition>
+        <offsets>
+            <x-m>62</x-m>
+            <y-m>0</y-m>
+            <z-m>7.5</z-m>
+            <pitch-deg>2</pitch-deg>
+            <heading-deg>9</heading-deg>
+        </offsets>
+    </model>
+    <model>
         <name>heli</name>
         <path>Models/Aircraft/H-60.xml</path>
         <condition>
@@ -200,9 +213,9 @@
         <name>Pushback</name>
         <path>Aircraft/u.s.navy/Models/Pushback/Shorttug.xml</path>
         <offsets>
-            <x-m> -60.000 </x-m>
+            <x-m> -115.000 </x-m>
             <y-m>   0.000 </y-m>
-            <z-m>   0.000 </z-m>
+            <z-m>  -5.582 </z-m>
         </offsets>
     </model>
     <animation>
