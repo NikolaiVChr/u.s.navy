@@ -240,6 +240,11 @@
         </multiplay>
         <horn type="bool">false</horn>
     </sim>
+    <instrumentation>
+        <tacan>
+            <ident>041X</ident>
+        </tacan>
+    </instrumentation>
     <!--<autopilot>
  <config>
  min-climb-speed-kt type="float">70.0</min-climb-speed-kt>

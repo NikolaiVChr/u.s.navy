@@ -179,6 +179,11 @@
             <min-lb>0</min-lb>
         </weight>
     </sim>
+    <instrumentation>
+        <tacan>
+            <ident>028Y</ident>
+        </tacan>
+    </instrumentation>
     <!--<autopilot>
  <config>
  min-climb-speed-kt type="float">70.0</min-climb-speed-kt>
