@@ -221,24 +221,6 @@
             <max-lb>400000</max-lb>
             <min-lb>0</min-lb>
         </weight>
-        <multiplay>
-            <generic>
-                <float n="0" alias="/orientation/roll-deg" />
-                <float n="1" alias="/velocities/groundspeed-kt" />
-                <float n="2" alias="/gear/gear[0]/compression-norm" />
-                <float n="3" alias="/velocities/airspeed-kt" />
-                <float n="4" alias="/controls/lighting/panel-norm" />
-                <float n="5" alias="/controls/engines/engine/throttle" />
-                <float n="6" alias="/engines/engine/throttle" />
-                <int n="0" alias="/sim/crashed" />
-                <int n="1" alias="/controls/lighting/landzone" />
-                <int n="2" alias="/controls/doors" />
-                <int n="3" alias="/controls/Mary-ondeck" />
-                <int n="4" alias="/sim/horn" />
-                <int n="5" alias="/controls/Mary" />
-            </generic>
-        </multiplay>
-        <horn type="bool">false</horn>
     </sim>
     <instrumentation>
         <tacan>
