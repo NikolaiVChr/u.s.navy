@@ -84,7 +84,7 @@ var update_controls = func {
 		if (push == nil) push = 0;
 		var push2 = getprop("sim/model/pushback/position-norm");
 		if (push2 == nil) push2 = 0;		
- 		interpolate ("orientation/heading-deg", head+ail*getprop(rudder_adv)*push2*getprop (throttle)*0.5+ail*getprop(rudder_adv)*push2*push, looptime);
+ 		interpolate ("orientation/heading-deg", head+ail*getprop(rudder_adv)*getprop (throttle)*0.5+ail*getprop(rudder_adv)*push2*push, looptime);
 		
 	}
 
