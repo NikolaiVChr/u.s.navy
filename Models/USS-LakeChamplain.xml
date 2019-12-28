@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
     <path>Aircraft/u.s.navy/Models/CG-57-high-detail/CG-57.ac</path>
+    <solid>flight-deck-large-texture</solid>
     <sound>
         <path>Aircraft/u.s.navy/vessel-sound/mp-sound.xml</path>
     </sound>
