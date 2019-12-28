@@ -3,7 +3,7 @@
     <sim>
         <description>USS San Antonio</description>
         <author>H.Schulz (3D), Vivian Meazza (3D), Detlef Faber (FDM base), T. Henkel (Combined), Nikolai V. Chr. (Misc. fixes)</author>
-        <long-description>San Antonio class is a amphibious transport dock ship type from the 2000's.</long-description>
+        <long-description>San Antonio class is a amphibious transport dock ship type from the 2000's. San Antonio (LPD-17) was the first built of this class.</long-description>
         <variant-of>Champlain</variant-of>
         <rating>
             <FDM type="int">2</FDM>

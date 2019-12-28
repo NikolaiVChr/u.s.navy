@@ -197,7 +197,7 @@
         <type>rotate</type>
         <object-name>heli</object-name>
         <property>sim/multiplay/generic/float[3]</property>
-        <factor>0.75</factor>
+        <factor>0.4</factor>
         <center>
             <x-m>200</x-m>
             <y-m>0</y-m>
