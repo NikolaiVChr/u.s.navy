@@ -8,6 +8,7 @@
     <animation>
         <!-- to be able to land on deck -->
         <object-name>flight-deck-large-texture</object-name>
+        <object-name>flight-deck-RSD-rails</object-name>
         <enable-hot type="bool">true</enable-hot>
     </animation>
     <!-- *** Effects *** -->
