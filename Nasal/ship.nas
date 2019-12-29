@@ -50,8 +50,9 @@ var main_loop = func {
 var update_AI_position = func {
 		var tspeed = getprop("controls/flight/target-spd");
 		var cspeed = getprop("velocities/airspeed-kt");
+		var throttlev = getprop(throttle);
 		if (cspeed<tspeed) {
-			cspeed += looptime;
+			cspeed += looptime*throttlev*3;
 			if (cspeed>tspeed) cspeed=tspeed;
 		} elsif (cspeed>tspeed) {
 			cspeed -= looptime;
