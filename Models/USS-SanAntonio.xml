@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
-    <description>USS SanAntonio</description>
-    <author>Naval Postgraduate School SAVAGE project, Vivian Meazza, Heiko Schulz</author>
-    <status>early-production</status>
     <path>Models/Geometry/SanAntonio/LPD17.ac</path>
+    <sound>
+        <path>Aircraft/u.s.navy/vessel-sound/mp-sound.xml</path>
+    </sound>
     <animation>
         <!-- to be able to land on deck -->
         <object-name>ShapeIndexedFaceS.005</object-name>

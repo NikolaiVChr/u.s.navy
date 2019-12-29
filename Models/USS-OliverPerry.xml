@@ -2,6 +2,9 @@
 <PropertyList>
     <!--  -->
     <path>Models/Maritime/Military/OliverPerryFFG.ac</path>
+    <sound>
+        <path>Aircraft/u.s.navy/vessel-sound/mp-sound.xml</path>
+    </sound>
     <animation>
       	<!-- to be able to land on deck -->
       	<object-name>hull</object-name>
