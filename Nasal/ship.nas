@@ -99,7 +99,7 @@ var update_orientation = func {
 		# adjust climb while planing
 
 		# adjust pitch
-		var pitchup = getprop (pitch_factor)* getprop (speed) + getprop ("sim/SDM/environment/waveloop-norm")*0.15;
+		var pitchup = getprop (pitch_factor)* getprop (speed) + getprop ("sim/SDM/environment/waveloop-norm")*0.10;
 		setprop (pitch, pitchup);
 }
 
