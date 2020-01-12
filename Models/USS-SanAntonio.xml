@@ -233,9 +233,4 @@
             <z-m>  -5.582 </z-m>
         </offsets>
     </model>
-    <animation>
-        <type>range</type>
-        <min-m>0</min-m>
-        <max-m>30000</max-m>
-    </animation>
 </PropertyList>
