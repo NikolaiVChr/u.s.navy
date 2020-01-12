@@ -38,7 +38,7 @@
             objModel.getNode("heading-deg-prop",1).setValue(self.getPath()~"/orientation/true-heading-deg");
             objModel.getNode("pitch-deg-prop",1).setValue(self.getPath()~"/orientation/pitch-deg");
             objModel.getNode("roll-deg-prop",1).setValue(self.getPath()~"/orientation/roll-deg");
-            objModel.getNode("path",1).setValue("Aircraft/u.s.navy/Models/deck-antonio.ac");
+            objModel.getNode("path",1).setValue("Aircraft/u.s.navy/Models/deck-antonio.xml");
 
             var loadNode = objModel.getNode("load", 1);
             loadNode.setBoolValue(1);
